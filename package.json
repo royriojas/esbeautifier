@@ -26,7 +26,8 @@
     "eslint": "^0.16.1",
     "eslint-friendly-formatter": "^1.0.3",
     "istanbul": "^0.3.7",
-    "watch-run": "^1.2.2"
+    "watch-run": "^1.2.2",
+    "watch-spawn": "^1.0.3"
   },
   "dependencies": {
     "dispatchy": "^1.0.1",

@@ -1,7 +1,7 @@
-var dispatcher = require('dispatchy');
-var merge = require('lodash.merge');
+var dispatcher = require( 'dispatchy' );
+var merge = require( 'lodash.merge' );
 
-module.exports = merge(dispatcher.create(), {
+module.exports = merge( dispatcher.create(), {
   beautify: function ( files, cfg ) {
     var me = this;
     var esformatter = require( 'esformatter' );
@@ -17,17 +17,17 @@ module.exports = merge(dispatcher.create(), {
       if ( source !== output ) {
         write( file, output );
         count++;
-        me.fire('beautify', {
+        me.fire( 'beautify', {
           file: file,
           count: count
-        });
+        } );
       }
     } );
 
-    me.fire('done', {
+    me.fire( 'done', {
       files: files,
       beautified: count
-    });
+    } );
     //console.log('files received', files.length, 'beautified', count);
   }
-});
+} );
