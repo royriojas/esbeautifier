@@ -1,6 +1,6 @@
 {
   "name": "esbeautifier",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple wrapper around esformatter to beautify javascript files overriding the content of the files",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,6 @@
     "eslint": "^0.16.1",
     "eslint-friendly-formatter": "^1.0.3",
     "istanbul": "^0.3.7",
-    "watch-run": "^1.2.2",
     "watch-spawn": "^1.0.3"
   },
   "dependencies": {
