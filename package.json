@@ -1,10 +1,15 @@
 {
   "name": "esbeautifier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple wrapper around esformatter to beautify javascript files overriding the content of the files",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "beautify": "./bin/esbeautifier.js index.js lib/**/*.js bin/**/*.js",
+    "lint": "eslint --format 'node_modules/eslint-friendly-formatter' index.js lib/ bin/ -c './configs/eslint.json'"
+  },
+  "bin": {
+    "esbeautifier": "./bin/esbeautifier.js"
   },
   "repository": "royriojas/esbeautifier",
   "license": "MIT",
@@ -12,13 +17,22 @@
     "name": "Roy Riojas",
     "url": "http://royriojas.com"
   },
-  "devDependencies": {},
-  "dependencies": {
-    "esformatter": "^0.5.0",
+  "peerDependencies": {
     "esformatter-eol-last": "^1.0.0",
     "esformatter-quotes": "^1.0.0",
-    "esformatter-shebang-ignore": "^1.0.0",
+    "esformatter-shebang-ignore": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^0.16.1",
+    "eslint-friendly-formatter": "^1.0.3",
+    "istanbul": "^0.3.7",
+    "watch-run": "^1.2.2"
+  },
+  "dependencies": {
+    "dispatchy": "^1.0.1",
+    "esformatter": "^0.5.0",
     "glob-expand": "0.0.2",
+    "lodash.merge": "^3.0.3",
     "optionator": "^0.5.0",
     "read-file": "^0.1.2",
     "read-json-sync": "^1.1.0",

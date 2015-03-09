@@ -1,22 +1,33 @@
-module.exports = function ( files, cfg ) {
+var dispatcher = require('dispatchy');
+var merge = require('lodash.merge');
 
-  var esformatter = require( 'esformatter' );
-  var path = require( 'path' );
-  var read = require( 'read-file' ).readFileSync;
-  var write = require( 'write' ).sync;
-  var process = require( './process' );
+module.exports = merge(dispatcher.create(), {
+  beautify: function ( files, cfg ) {
+    var me = this;
+    var esformatter = require( 'esformatter' );
+    var read = require( 'read-file' ).readFileSync;
+    var write = require( 'write' ).sync;
 
-  files.forEach( function ( file ) {
-    var output = esformatter.format( read( file ), cfg );
-    write( file, output );
-    console.log( 'beautified file', file );
-  } );
-};
+    var count = 0;
+    files.forEach( function ( file ) {
+      var source = read( file );
 
-//var fBefore = [
-//  '../index.js',
-//  '../specs/**/*.js',
-//  '../configs/*.js'
-//].map( function ( file ) {
-//    return path.resolve( __dirname, file );
-//  } );
+      var output = esformatter.format( source, cfg );
+
+      if ( source !== output ) {
+        write( file, output );
+        count++;
+        me.fire('beautify', {
+          file: file,
+          count: count
+        });
+      }
+    } );
+
+    me.fire('done', {
+      files: files,
+      beautified: count
+    });
+    //console.log('files received', files.length, 'beautified', count);
+  }
+});
