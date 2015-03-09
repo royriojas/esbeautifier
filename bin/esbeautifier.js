@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+var console = require('../lib/console');
+var process = require('../lib/process');
+
 try {
   require( '../lib/cli' ).beautify( process.argv );
 } catch (ex) {
