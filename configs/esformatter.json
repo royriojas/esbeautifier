@@ -1,6 +1,7 @@
 {
   "plugins": [
     "esformatter-shebang-ignore",
+    "esformatter-jsx",
     "esformatter-quotes",
     "esformatter-eol-last"
   ],
