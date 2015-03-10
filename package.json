@@ -1,15 +1,15 @@
 {
   "name": "esbeautifier",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple wrapper around esformatter to beautify javascript files overriding the content of the files",
   "main": "index.js",
   "scripts": {
     "beautify": "./bin/esbeautifier.js index.js lib/**/*.js bin/**/*.js",
-    "lint": "eslint --format 'node_modules/eslint-friendly-formatter' index.js lib/ bin/ -c './configs/eslint.json'",
+    "eslint": "eslint --format 'node_modules/eslint-friendly-formatter' index.js lib/ bin/ -c './configs/eslint.json'",
     "test": "mocha-runner 'specs/**/*.js'",
     "cover": "istanbul cover -x specs/**/*.js mocha-runner 'specs/**/*.js' html text-summary",
     "watch": "npm run cover && watch-spawn -p 'specs/**/*.js' -p 'index.js' npm run cover",
-    "code-style": "jscs index.js lib/ bin/ --config='./configs/jscs.json'"
+    "lint" : "npm run beautify && npm run eslint"
   },
   "bin": {
     "esbeautifier": "./bin/esbeautifier.js"
@@ -20,11 +20,15 @@
     "name": "Roy Riojas",
     "url": "http://royriojas.com"
   },
+  "prepush": [
+    "npm run lint"
+  ],
   "devDependencies": {
     "eslint": "^0.16.1",
     "eslint-friendly-formatter": "^1.0.3",
     "istanbul": "^0.3.7",
     "mocha-runner": "^1.0.4",
+    "prepush": "^1.0.1",
     "proxyquire": "^1.4.0"
   },
   "dependencies": {
