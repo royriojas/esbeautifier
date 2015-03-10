@@ -48,7 +48,7 @@ module.exports = merge( dispatcher.create(), {
     cache.reconcile();
     me.fire( checkOnly ? 'check:done' : 'done', {
       files: files,
-      beautified: count
+      count: count
     } );
     //console.log('files received', files.length, 'beautified', count);
   }
