@@ -4,16 +4,16 @@
   "description": "Simple wrapper around esformatter to beautify javascript files overriding the content of the files",
   "main": "index.js",
   "scripts": {
-    "beautify": "./bin/esbeautifier.js index.js lib/**/*.js bin/**/*.js",
-    "eslint": "eslint --format 'node_modules/eslint-friendly-formatter' index.js lib/ bin/ -c './configs/eslint.json'",
+    "beautify": "./bin/cli.js index.js 'src/**/*.js' 'lib/**/*.js' 'bin/**/*.js' 'specs/**/*.js'",
+    "eslint": "eslint --format 'node_modules/eslint-friendly-formatter' index.js lib/ bin/ src/ specs/ -c './configs/eslint.json'",
     "test": "mocha-runner 'specs/**/*.js'",
-    "cover": "istanbul cover -x specs/**/*.js mocha-runner 'specs/**/*.js' html text-summary",
-    "watch": "npm run cover && watch-spawn -p 'specs/**/*.js' -p 'index.js' npm run cover",
+    "cover": "istanbul cover -x 'specs/**/*.js' mocha-runner 'specs/**/*.js' html text-summary",
+    "watch": "npm run cover && watch-spawn -p 'specs/**/*.js' -p 'index.js' -p 'src/**/*.js' npm run cover",
     "lint": "npm run beautify && npm run eslint",
     "prepush": "npm run lint && npm test"
   },
   "bin": {
-    "esbeautifier": "./bin/esbeautifier.js"
+    "esbeautifier": "./bin/cli.js"
   },
   "repository": "royriojas/esbeautifier",
   "license": "MIT",
@@ -30,7 +30,8 @@
     "istanbul": "^0.3.7",
     "mocha-runner": "^1.0.4",
     "prepush": "^1.0.2",
-    "proxyquire": "^1.4.0"
+    "proxyquire": "^1.4.0",
+    "watch-spawn": "^1.0.3"
   },
   "dependencies": {
     "chalk": "^1.0.0",
@@ -42,7 +43,7 @@
     "esformatter-shebang-ignore": "^1.0.0",
     "file-entry-cache": "^1.0.1",
     "glob-expand": "0.0.2",
-    "lodash.merge": "^3.0.3",
+    "lodash.merge": "https://registry.npmjs.org/lodash.merge/-/lodash.merge-3.0.3.tgz",
     "optionator": "^0.5.0",
     "read-file": "^0.1.2",
     "read-json-sync": "^1.1.0",
