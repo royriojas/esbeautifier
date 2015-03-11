@@ -3,7 +3,7 @@
 var main = require( '../src/main' );
 var programOptions = require( '../src/options' );
 
-var cliLauncher = require( '../lib/cli-launcher' );
+var cliLauncher = require( 'clix' );
 
 //cliLauncher.onError = function () {
 //  // handle the error here
