@@ -1,16 +1,16 @@
 {
   "name": "esbeautifier",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Simple wrapper around esformatter to beautify javascript files overriding the content of the files",
   "main": "index.js",
   "scripts": {
     "beautify": "./bin/cli.js index.js 'src/**/*.js' 'lib/**/*.js' 'bin/**/*.js' 'specs/**/*.js'",
+    "beautify-check": "./bin/cli.js -k index.js 'src/**/*.js' 'lib/**/*.js' 'bin/**/*.js' 'specs/**/*.js'",
     "eslint": "eslint --format 'node_modules/eslint-friendly-formatter' index.js lib/ bin/ src/ specs/ -c './configs/eslint.json'",
     "test": "mocha-runner 'specs/**/*.js'",
     "cover": "istanbul cover -x 'specs/**/*.js' mocha-runner 'specs/**/*.js' html text-summary",
     "watch": "npm run cover && watch-spawn -p 'specs/**/*.js' -p 'index.js' -p 'src/**/*.js' npm run cover",
-    "lint": "npm run beautify && npm run eslint",
-    "prepush": "npm run lint && npm test"
+    "prepush": "npm run beautify-check && npm run eslint && npm test"
   },
   "bin": {
     "esbeautifier": "./bin/cli.js"

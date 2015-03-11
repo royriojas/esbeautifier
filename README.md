@@ -20,14 +20,15 @@ npm i -g esbeautifier
 Usage: esbeautifier [options] glob [glob1] [glob2]..[globN]
 
 Options:
-  -h, --help                 Show this help
-  -c, --config path::String  Path to your `esformatter` config, if not provided will try to use the `.esformatter` file in your
-                             current working directory, if not found will use the one provided with the package
-  -k, --checkOnly            Will just run the beautifier and report which files need to be beautified
-  -u, --useCache             If true, this module will remember the `mtime` and `size` of the module and only operate on the ones
-                             that changed. If false, the cache will be destroyed. Cache will only be kept between executions with
-                             the useCache flag set to true.
-  -v, --version              Outputs the version number
+  -k, --checkOnly      Will just run the beautifier and report which files need to be beautified
+  -u, --useCache       If true, this module will remember the `mtime` and `size` of the beatufied files and only
+                       operate on the ones that changed. If false, the cache will be destroyed. Cache will only be kept
+                       between executions with the useCache flag set to true.
+  -h, --help           Show this help
+  -v, --version        Outputs the version number
+  -q, --quiet          Show only the summary info
+  -c, --config String  Path to your `esformatter` config, if not provided will try to use the `.esformatter` file in
+                       your current working directory, if not found will use the one provided with the package
 ```
 
 ## Examples
