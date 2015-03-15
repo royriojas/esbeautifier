@@ -34,7 +34,7 @@ module.exports = {
     var useCache = !!opts.useCache;
 
     if ( !checkOnly ) {
-      beautifier.on( 'beautify.cli', function ( e, _args ) {
+      beautifier.on( 'need:beautify.cli', function ( e, _args ) {
         cli.subtle( 'beautifying', _args.file );
       } );
 
@@ -55,7 +55,7 @@ module.exports = {
         filesToBeautify.push( _args.file );
       } );
 
-      beautifier.on( 'check:done.cli', function () {
+      beautifier.on( 'done.cli', function () {
         if ( filesToBeautify.length > 0 ) {
           console.error( chalk.red( '>> the following files need beautification: ' ), chalk.yellow( '\n\n   - ' + filesToBeautify.join( '\n   - ' ) ) + '\n' );
           throw new Error( sFormat( '{0} files need beautification', filesToBeautify.length ) );

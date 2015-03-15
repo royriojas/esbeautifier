@@ -30,6 +30,10 @@ module.exports = merge( dispatcher.create(), {
       files: files
     } );
 
+    if ( files.length === 0 ) {
+      return;
+    }
+
     files.forEach( function ( file ) {
       var source = read( file );
 
@@ -42,7 +46,8 @@ module.exports = merge( dispatcher.create(), {
           cache.removeEntry( file );
         }
         count++;
-        me.fire( checkOnly ? 'need:beautify' : 'beautify', {
+        me.fire( 'need:beautify', {
+          check: checkOnly,
           file: file,
           count: count
         } );
@@ -50,7 +55,8 @@ module.exports = merge( dispatcher.create(), {
     } );
 
     cache.reconcile();
-    me.fire( checkOnly ? 'check:done' : 'done', {
+    me.fire( 'done', {
+      checkOnly: checkOnly,
       files: files,
       count: count
     } );
