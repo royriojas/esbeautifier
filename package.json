@@ -10,7 +10,8 @@
     "test": "mocha-runner 'specs/**/*.js'",
     "cover": "istanbul cover -x 'specs/**/*.js' mocha-runner 'specs/**/*.js' html text-summary",
     "watch": "npm run cover && watch-spawn -p 'specs/**/*.js' -p 'index.js' -p 'src/**/*.js' npm run cover",
-    "prepush": "npm run beautify-check && npm run eslint && npm test"
+    "prepush": "npm run beautify-check && npm run eslint && npm test",
+    "bump-minor": "npm-bump minor"
   },
   "bin": {
     "esbeautifier": "./bin/cli.js"
@@ -29,6 +30,7 @@
     "eslint-friendly-formatter": "^1.0.3",
     "istanbul": "^0.3.7",
     "mocha-runner": "^1.0.4",
+    "npm-bump": "0.0.13",
     "prepush": "^1.0.2",
     "proxyquire": "^1.4.0",
     "watch-spawn": "^1.0.3"
