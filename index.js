@@ -26,6 +26,10 @@ module.exports = merge( dispatcher.create(), {
 
     var count = 0;
 
+    me.fire( 'beautify:start', {
+      files: files
+    } );
+
     files.forEach( function ( file ) {
       var source = read( file );
 
