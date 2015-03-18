@@ -49,3 +49,5 @@ esbeautifier -u src/**/*.js
 
 The cache is only kept if the executions of the beautifying command is done with the `-u` flag. If any execution omit this flag
 The cache will be destroyed and created again from scratch the next time the `-u` flag is provided
+
+## [Changelog](./changelog.md)

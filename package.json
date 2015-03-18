@@ -10,7 +10,9 @@
     "test": "mocha-runner 'specs/**/*.js'",
     "cover": "istanbul cover -x 'specs/**/*.js' mocha-runner 'specs/**/*.js' html text-summary",
     "watch": "npm run cover && watch-spawn -p 'specs/**/*.js' -p 'index.js' -p 'src/**/*.js' npm run cover",
-    "prepush": "npm run beautify-check && npm run eslint && npm test"
+    "prepush": "npm run beautify-check && npm run eslint && npm test",
+    "changelog": "changelogx -f markdown -o ./changelog.md",
+    "install-hooks": "prepush install && changelogx install-hook"
   },
   "bin": {
     "esbeautifier": "./bin/cli.js"
@@ -25,6 +27,7 @@
     "npm run prepush"
   ],
   "devDependencies": {
+    "changelogx": "^1.0.5",
     "eslint": "^0.16.1",
     "eslint-friendly-formatter": "^1.0.3",
     "istanbul": "^0.3.7",
@@ -64,5 +67,12 @@
     "jsx",
     "prettyprint",
     "prettify"
-  ]
+  ],
+  "changelogx": {
+    "issueIDRegExp" : "#(\\d+)",
+    "commitURL": "https://github.com/royriojas/esbeautifier/commit/{0}",
+    "authorURL": "https://github.com/{0}",
+    "issueIDURL": "https://github.com/royriojas/esbeautifier/issues/{0}",
+    "projectName": "esbeautifier"
+  }
 }
