@@ -1,5 +1,12 @@
 
 # esbeautifier - Changelog
+## v2.0.3
+- **Build Scripts Changes**
+  - Release v2.0.3 - [735851f]( https://github.com/royriojas/esbeautifier/commit/735851f ), [Roy Riojas](https://github.com/Roy Riojas), 18/03/2015 11:05:33
+    
+- **Enhancements**
+  - Include changelog - [6d33a18]( https://github.com/royriojas/esbeautifier/commit/6d33a18 ), [Roy Riojas](https://github.com/Roy Riojas), 18/03/2015 11:05:26
+    
 ## v2.0.2
 - **Build Scripts Changes**
   - Release v2.0.2 - [62f04de]( https://github.com/royriojas/esbeautifier/commit/62f04de ), [Roy Riojas](https://github.com/Roy Riojas), 18/03/2015 10:59:39
