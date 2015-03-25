@@ -36,8 +36,12 @@ module.exports = merge( dispatcher.create(), {
 
     files.forEach( function ( file ) {
       var source = read( file );
-
-      var output = esformatter.format( source, cfg );
+      var output;
+      try {
+        output = esformatter.format( source, cfg );
+      } catch (ex) {
+        throw new Error( 'Error: ' + file + ':' + ex.lineNumber + ':' + ex.column + ' \n>> ' + ex.message );
+      }
 
       if ( source !== output ) {
         if ( !checkOnly ) {

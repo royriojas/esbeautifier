@@ -6,13 +6,15 @@
   "scripts": {
     "beautify": "./bin/cli.js index.js 'src/**/*.js' 'lib/**/*.js' 'bin/**/*.js' 'specs/**/*.js'",
     "beautify-check": "./bin/cli.js -k index.js 'src/**/*.js' 'lib/**/*.js' 'bin/**/*.js' 'specs/**/*.js'",
-    "eslint": "eslint --format 'node_modules/eslint-friendly-formatter' index.js lib/ bin/ src/ specs/ -c './configs/eslint.json'",
+    "eslint": "eslinter index.js 'src/**/*.js' 'lib/**/*.js' 'bin/**/*.js' 'specs/**/*.js'",
     "test": "mocha-runner 'specs/**/*.js'",
     "cover": "istanbul cover -x 'specs/**/*.js' mocha-runner 'specs/**/*.js' html text-summary",
     "watch": "npm run cover && watch-spawn -p 'specs/**/*.js' -p 'index.js' -p 'src/**/*.js' npm run cover",
-    "prepush": "npm run beautify-check && npm run eslint && npm test",
+    "lint": "npm run beautify && npm run eslint && npm test",
+    "check": "npm run beautify-check && npm run eslint && npm test",
     "changelog": "changelogx -f markdown -o ./changelog.md",
-    "install-hooks": "prepush install && changelogx install-hook"
+    "install-hooks": "prepush install && changelogx install-hook",
+    "bump": "bumpery --verify='npm run check'"
   },
   "bin": {
     "esbeautifier": "./bin/cli.js"
@@ -24,15 +26,15 @@
   "license": "MIT",
   "author": "Roy Riojas (http://royriojas.com)",
   "prepush": [
-    "npm run prepush"
+    "npm run check"
   ],
   "devDependencies": {
-    "changelogx": "^1.0.5",
-    "eslint": "^0.16.1",
-    "eslint-friendly-formatter": "^1.0.3",
+    "bumpery": "^1.0.4",
+    "changelogx": "^1.0.11",
+    "eslinter": "^1.0.0",
     "istanbul": "^0.3.7",
     "mocha-runner": "^1.0.4",
-    "prepush": "^1.0.2",
+    "prepush": "^2.0.3",
     "proxyquire": "^1.4.0",
     "watch-spawn": "^1.0.3"
   },
@@ -69,7 +71,7 @@
     "prettify"
   ],
   "changelogx": {
-    "issueIDRegExp" : "#(\\d+)",
+    "issueIDRegExp": "#(\\d+)",
     "commitURL": "https://github.com/royriojas/esbeautifier/commit/{0}",
     "authorURL": "https://github.com/{0}",
     "issueIDURL": "https://github.com/royriojas/esbeautifier/issues/{0}",
