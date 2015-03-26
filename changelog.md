@@ -1,5 +1,28 @@
 
 # esbeautifier - Changelog
+## HEAD
+- **Build Scripts Changes**
+  - Release v2.0.5 - [7f2ffca]( https://github.com/royriojas/esbeautifier/commit/7f2ffca ), [Roy Riojas](https://github.com/Roy Riojas), 26/03/2015 00:45:57
+
+    
+- **Bug Fixes**
+  - Fix for missing `done` event when no files need beautification. Fix [#1](https://github.com/royriojas/esbeautifier/issues/1) - [637b216]( https://github.com/royriojas/esbeautifier/commit/637b216 ), [Roy Riojas](https://github.com/Roy Riojas), 26/03/2015 00:44:14
+
+    
+## v2.0.5
+- **Build Scripts Changes**
+  - Release v2.0.5 - [90a5c49]( https://github.com/royriojas/esbeautifier/commit/90a5c49 ), [Roy Riojas](https://github.com/Roy Riojas), 26/03/2015 00:40:00
+
+    
+- **Bug Fixes**
+  - Fix for missing `done` event when no files need beautification - [39e4699]( https://github.com/royriojas/esbeautifier/commit/39e4699 ), [Roy Riojas](https://github.com/Roy Riojas), 26/03/2015 00:39:19
+
+    
+#### Changelog
+- **Documentation**
+  - generated changelog - [7474a35]( https://github.com/royriojas/esbeautifier/commit/7474a35 ), [Roy Riojas](https://github.com/Roy Riojas), 25/03/2015 02:24:47
+
+    
 ## v2.0.4
 - **Build Scripts Changes**
   - Release v2.0.4 - [0e72654]( https://github.com/royriojas/esbeautifier/commit/0e72654 ), [Roy Riojas](https://github.com/Roy Riojas), 25/03/2015 02:24:07
