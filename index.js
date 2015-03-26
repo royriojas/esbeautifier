@@ -31,6 +31,11 @@ module.exports = merge( dispatcher.create(), {
     } );
 
     if ( files.length === 0 ) {
+      me.fire( 'done', {
+        checkOnly: checkOnly,
+        files: files,
+        count: count
+      } );
       return;
     }
 
