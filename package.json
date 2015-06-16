@@ -30,11 +30,11 @@
   ],
   "devDependencies": {
     "bumpery": "^1.0.4",
-    "changelogx": "^1.0.11",
+    "changelogx": "^1.0.13",
     "eslinter": "^1.0.0",
     "istanbul": "^0.3.7",
     "mocha-runner": "^1.0.4",
-    "prepush": "^2.0.3",
+    "prepush": "^2.0.4",
     "proxyquire": "^1.4.0",
     "watch-spawn": "^1.0.3"
   },
