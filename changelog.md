@@ -1,5 +1,25 @@
 
 # esbeautifier - Changelog
+## v2.2.3
+- **Build Scripts Changes**
+  - Release v2.2.3 - [7c412ee]( https://github.com/royriojas/esbeautifier/commit/7c412ee ), [royriojas](https://github.com/royriojas), 16/06/2015 04:44:39
+
+    
+  - update deps - [bbc4009]( https://github.com/royriojas/esbeautifier/commit/bbc4009 ), [royriojas](https://github.com/royriojas), 16/06/2015 04:44:23
+
+    
+  - Release v2.2.2 - [8a7d50b]( https://github.com/royriojas/esbeautifier/commit/8a7d50b ), [royriojas](https://github.com/royriojas), 16/06/2015 04:37:19
+
+    
+## v2.2.2
+- **Build Scripts Changes**
+  - Release v2.2.2 - [4082899]( https://github.com/royriojas/esbeautifier/commit/4082899 ), [royriojas](https://github.com/royriojas), 16/06/2015 04:36:50
+
+    
+- **Documentation**
+  - Generate Changelog - [9fa9595]( https://github.com/royriojas/esbeautifier/commit/9fa9595 ), [royriojas](https://github.com/royriojas), 16/06/2015 04:31:54
+
+    
 ## v2.2.1
 - **Build Scripts Changes**
   - Release v2.2.1 - [54c386d]( https://github.com/royriojas/esbeautifier/commit/54c386d ), [royriojas](https://github.com/royriojas), 16/06/2015 04:28:26
