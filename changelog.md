@@ -1,5 +1,18 @@
 
 # esbeautifier - Changelog
+## v2.1.0
+- **Build Scripts Changes**
+  - Release v2.1.0 - [6ed2d0b]( https://github.com/royriojas/esbeautifier/commit/6ed2d0b ), [royriojas](https://github.com/royriojas), 16/06/2015 04:26:01
+
+    
+  - Update esformatter-jsx dep - [a4c4dd6]( https://github.com/royriojas/esbeautifier/commit/a4c4dd6 ), [royriojas](https://github.com/royriojas), 16/06/2015 04:25:36
+
+    
+#### Changelog
+- **Documentation**
+  - generated changelog - [7973a4e]( https://github.com/royriojas/esbeautifier/commit/7973a4e ), [Roy Riojas](https://github.com/Roy Riojas), 26/03/2015 00:50:57
+
+    
 ## v2.0.5
 #### Changelog
 - **Documentation**
