@@ -1,5 +1,5 @@
 var dispatcher = require( 'dispatchy' );
-var merge = require( 'lodash.merge' );
+var merge = require( 'extend' );
 
 module.exports = merge( dispatcher.create(), {
   beautify: function ( files, opts ) {
