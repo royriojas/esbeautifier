@@ -1,6 +1,6 @@
 {
   "name": "esbeautifier",
-  "version": "2.2.3",
+  "version": "2.3.0",
   "description": "Simple wrapper around esformatter to beautify javascript files overriding the content of the files",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
     "lint": "npm run beautify && npm run eslint && npm test",
     "check": "npm run beautify-check && npm run eslint && npm test",
     "changelog": "changelogx -f markdown -o ./changelog.md",
+    "do-changelog": "npm run changelog && git add ./changelog.md && git commit -m 'DOC: Generate changelog'",
     "install-hooks": "prepush install && changelogx install-hook",
     "bump": "bumpery --verify='npm run check'"
   },
@@ -29,31 +30,31 @@
     "npm run check"
   ],
   "devDependencies": {
-    "bumpery": "^1.0.4",
+    "bumpery": "^1.0.7",
     "changelogx": "^1.0.13",
-    "eslinter": "^1.0.0",
-    "istanbul": "^0.3.7",
-    "mocha-runner": "^1.0.4",
+    "eslinter": "^2.0.1",
+    "istanbul": "^0.3.15",
+    "mocha-runner": "^1.0.8",
     "prepush": "^2.0.4",
-    "proxyquire": "^1.4.0",
+    "proxyquire": "^1.5.0",
     "watch-spawn": "^1.0.3"
   },
   "dependencies": {
     "chalk": "^1.0.0",
-    "clix": "^1.0.1",
-    "dispatchy": "^1.0.1",
-    "esformatter": "^0.5.0",
+    "clix": "^1.0.7",
+    "dispatchy": "^1.0.2",
+    "esformatter": "^0.7.0",
     "esformatter-eol-last": "^1.0.0",
-    "esformatter-jsx": "^1.1.0",
-    "esformatter-quotes": "^1.0.0",
+    "esformatter-jsx": "^1.2.0",
+    "esformatter-quotes": "^1.0.2",
     "esformatter-shebang-ignore": "^1.0.0",
     "extend": "^2.0.1",
     "file-entry-cache": "^1.0.1",
-    "glob-expand": "0.0.2",
-    "optionator": "^0.5.0",
+    "glob-expand": "^0.1.0",
+    "optionator": "^0.6.0",
     "read-file": "^0.1.2",
     "stringformat": "0.0.5",
-    "write": "^0.1.1"
+    "write": "^0.2.0"
   },
   "bugs": {
     "url": "https://github.com/royriojas/esbeautifier/issues"
@@ -70,12 +71,5 @@
     "jsx",
     "prettyprint",
     "prettify"
-  ],
-  "changelogx": {
-    "issueIDRegExp": "#(\\d+)",
-    "commitURL": "https://github.com/royriojas/esbeautifier/commit/{0}",
-    "authorURL": "https://github.com/{0}",
-    "issueIDURL": "https://github.com/royriojas/esbeautifier/issues/{0}",
-    "projectName": "esbeautifier"
-  }
+  ]
 }
