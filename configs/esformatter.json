@@ -1,10 +1,16 @@
 {
   "plugins": [
-    "esformatter-shebang-ignore",
     "esformatter-jsx",
     "esformatter-quotes",
     "esformatter-eol-last"
   ],
+  "jsx": {
+    "formatJSX": true,
+    "attrsOnSameLineAsTag": false,
+    "maxAttrsOnTag": 2,
+    "firstAttributeOnSameLine": true,
+    "alignWithFirstAttribute": true
+  },
   "quotes": {
     "type": "single",
     "avoidEscape": false
@@ -33,7 +39,8 @@
     "TopLevelFunctionBlock": 1,
     "TryStatement": 1,
     "VariableDeclaration.LogicalExpression": 1,
-    "WhileStatement": 1
+    "WhileStatement": 1,
+    "LineComment" : 2
   },
   "lineBreak": {
     "before": {
@@ -175,7 +182,7 @@
       "AssignmentOperator": 1,
       "BinaryExpression": 0,
       "BinaryExpressionOperator": 1,
-      "BlockComment": 1,
+      "BlockComment": 0,
       "CallExpression": 1,
       "CatchParameterList": 0,
       "CatchOpeningBrace": 1,
@@ -216,7 +223,7 @@
       "ElseIfStatementOpeningBrace": 1,
       "ElseIfStatementClosingBrace": 1,
       "MemberExpressionClosing": 1,
-      "LineComment": 1,
+      "LineComment": 0,
       "LogicalExpressionOperator": 1,
       "Property": 1,
       "PropertyValue": 1,
