@@ -1,74 +1,30 @@
 
 # esbeautifier - Changelog
+## v3.0.0
+- **Tests Related fixes**
+  - Added initial tests for esbeautifier - [ab27ef7]( https://github.com/royriojas/esbeautifier/commit/ab27ef7 ), [royriojas](https://github.com/royriojas), 17/06/2015 03:26:15
+
+    
+- **Build Scripts Changes**
+  - Update deps - [03deaa0]( https://github.com/royriojas/esbeautifier/commit/03deaa0 ), [royriojas](https://github.com/royriojas), 16/06/2015 23:30:52
+
+    
 ## v2.2.3
 - **Build Scripts Changes**
-  - Release v2.2.3 - [7c412ee]( https://github.com/royriojas/esbeautifier/commit/7c412ee ), [royriojas](https://github.com/royriojas), 16/06/2015 04:44:39
-
-    
   - update deps - [bbc4009]( https://github.com/royriojas/esbeautifier/commit/bbc4009 ), [royriojas](https://github.com/royriojas), 16/06/2015 04:44:23
-
-    
-  - Release v2.2.2 - [8a7d50b]( https://github.com/royriojas/esbeautifier/commit/8a7d50b ), [royriojas](https://github.com/royriojas), 16/06/2015 04:37:19
-
-    
-## v2.2.2
-- **Build Scripts Changes**
-  - Release v2.2.2 - [4082899]( https://github.com/royriojas/esbeautifier/commit/4082899 ), [royriojas](https://github.com/royriojas), 16/06/2015 04:36:50
-
-    
-- **Documentation**
-  - Generate Changelog - [9fa9595]( https://github.com/royriojas/esbeautifier/commit/9fa9595 ), [royriojas](https://github.com/royriojas), 16/06/2015 04:31:54
-
-    
-## v2.2.1
-- **Build Scripts Changes**
-  - Release v2.2.1 - [54c386d]( https://github.com/royriojas/esbeautifier/commit/54c386d ), [royriojas](https://github.com/royriojas), 16/06/2015 04:28:26
-
-    
-## v2.2.0
-- **Build Scripts Changes**
-  - Release v2.2.0 - [8993443]( https://github.com/royriojas/esbeautifier/commit/8993443 ), [royriojas](https://github.com/royriojas), 16/06/2015 04:27:37
-
-    
-- **Documentation**
-  - Generate Changelog - [3c14705]( https://github.com/royriojas/esbeautifier/commit/3c14705 ), [royriojas](https://github.com/royriojas), 16/06/2015 04:26:55
 
     
 ## v2.1.0
 - **Build Scripts Changes**
-  - Release v2.1.0 - [6ed2d0b]( https://github.com/royriojas/esbeautifier/commit/6ed2d0b ), [royriojas](https://github.com/royriojas), 16/06/2015 04:26:01
-
-    
   - Update esformatter-jsx dep - [a4c4dd6]( https://github.com/royriojas/esbeautifier/commit/a4c4dd6 ), [royriojas](https://github.com/royriojas), 16/06/2015 04:25:36
 
     
-#### Changelog
-- **Documentation**
-  - generated changelog - [7973a4e]( https://github.com/royriojas/esbeautifier/commit/7973a4e ), [Roy Riojas](https://github.com/Roy Riojas), 26/03/2015 00:50:57
-
-    
 ## v2.0.5
-#### Changelog
-- **Documentation**
-  - generated changelog - [5848830]( https://github.com/royriojas/esbeautifier/commit/5848830 ), [Roy Riojas](https://github.com/Roy Riojas), 26/03/2015 00:46:52
-
-    
-  - generated changelog - [7474a35]( https://github.com/royriojas/esbeautifier/commit/7474a35 ), [Roy Riojas](https://github.com/Roy Riojas), 25/03/2015 02:24:47
-
-    
-- **Build Scripts Changes**
-  - Release v2.0.5 - [7f2ffca]( https://github.com/royriojas/esbeautifier/commit/7f2ffca ), [Roy Riojas](https://github.com/Roy Riojas), 26/03/2015 00:45:57
-
-    
 - **Bug Fixes**
   - Fix for missing `done` event when no files need beautification. Fix [#1](https://github.com/royriojas/esbeautifier/issues/1) - [637b216]( https://github.com/royriojas/esbeautifier/commit/637b216 ), [Roy Riojas](https://github.com/Roy Riojas), 26/03/2015 00:44:14
 
     
 ## v2.0.4
-- **Build Scripts Changes**
-  - Release v2.0.4 - [0e72654]( https://github.com/royriojas/esbeautifier/commit/0e72654 ), [Roy Riojas](https://github.com/Roy Riojas), 25/03/2015 02:24:07
-
-    
 - **Enhancements**
   - Better error description when file fails beautification - [b780087]( https://github.com/royriojas/esbeautifier/commit/b780087 ), [Roy Riojas](https://github.com/Roy Riojas), 25/03/2015 02:23:48
 
@@ -78,28 +34,22 @@
 
     
 ## v2.0.3
-- **Build Scripts Changes**
-  - Release v2.0.3 - [735851f]( https://github.com/royriojas/esbeautifier/commit/735851f ), [Roy Riojas](https://github.com/Roy Riojas), 18/03/2015 11:05:33
-
-    
 - **Enhancements**
   - Include changelog - [6d33a18]( https://github.com/royriojas/esbeautifier/commit/6d33a18 ), [Roy Riojas](https://github.com/Roy Riojas), 18/03/2015 11:05:26
 
     
 ## v2.0.2
-- **Build Scripts Changes**
-  - Release v2.0.2 - [62f04de]( https://github.com/royriojas/esbeautifier/commit/62f04de ), [Roy Riojas](https://github.com/Roy Riojas), 18/03/2015 10:59:39
-
-    
 - **Refactoring**
   - Default config keeps spaces between methods - [0258cab]( https://github.com/royriojas/esbeautifier/commit/0258cab ), [Roy Riojas](https://github.com/Roy Riojas), 18/03/2015 10:59:24
 
     
 ## v2.0.1
-- **Build Scripts Changes**
-  - Release v2.0.1 - [1d9ffcf]( https://github.com/royriojas/esbeautifier/commit/1d9ffcf ), [Roy Riojas](https://github.com/Roy Riojas), 15/03/2015 02:45:53
+- **undefined**
+  - Add npm bump" - [0d9516d]( https://github.com/royriojas/esbeautifier/commit/0d9516d ), [Roy Riojas](https://github.com/Roy Riojas), 14/03/2015 22:16:03
 
+    This reverts commit 0e6a7dfd19b0133285d2b5452a1d5246dc4f6d41.
     
+- **Build Scripts Changes**
   - Add npm bump - [0e6a7df]( https://github.com/royriojas/esbeautifier/commit/0e6a7df ), [Roy Riojas](https://github.com/Roy Riojas), 14/03/2015 22:10:46
 
     
@@ -135,11 +85,6 @@
     
   - Bump minor version - [57ab36a]( https://github.com/royriojas/esbeautifier/commit/57ab36a ), [Roy Riojas](https://github.com/Roy Riojas), 09/03/2015 03:06:04
 
-    
-- **undefined**
-  - Add npm bump" - [0d9516d]( https://github.com/royriojas/esbeautifier/commit/0d9516d ), [Roy Riojas](https://github.com/Roy Riojas), 14/03/2015 22:16:03
-
-    This reverts commit 0e6a7dfd19b0133285d2b5452a1d5246dc4f6d41.
     
 - **Refactoring**
   - redefined exposed event names - [a8d58a7]( https://github.com/royriojas/esbeautifier/commit/a8d58a7 ), [Roy Riojas](https://github.com/Roy Riojas), 14/03/2015 21:59:19
