@@ -9,7 +9,7 @@
     "ObjectExpression": {
       "maxLineLength": 80,
       "maxKeys": 4,
-      "maxDepth": 2,
+      "maxDepth": 1,
       "forbidden": [
         "FunctionExpression"
       ]
@@ -17,7 +17,7 @@
     "ArrayExpression": {
       "maxLineLength": 80,
       "maxKeys": 4,
-      "maxDepth": 2,
+      "maxDepth": 1,
       "forbidden": [
         "FunctionExpression"
       ]
