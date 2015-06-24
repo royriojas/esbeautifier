@@ -1,5 +1,15 @@
 
 # esbeautifier - Changelog
+## v3.1.1
+- **Build Scripts Changes**
+  - Lock dependencies - [0748ff4]( https://github.com/royriojas/esbeautifier/commit/0748ff4 ), [royriojas](https://github.com/royriojas), 24/06/2015 12:20:19
+
+    
+## v3.1.0
+- **Features**
+  - Add `esformatter-collapse-objects` to keep small objects and arrays collapsed - [ea0cd6e]( https://github.com/royriojas/esbeautifier/commit/ea0cd6e ), [royriojas](https://github.com/royriojas), 24/06/2015 12:19:21
+
+    
 ## v3.0.0
 - **Tests Related fixes**
   - Added initial tests for esbeautifier - [ab27ef7]( https://github.com/royriojas/esbeautifier/commit/ab27ef7 ), [royriojas](https://github.com/royriojas), 17/06/2015 03:26:15
