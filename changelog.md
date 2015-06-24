@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v3.1.2
+- **Enhancements**
+  - Make the objects and arrays not inlined if they have nested objects or arrays - [31730fe]( https://github.com/royriojas/esbeautifier/commit/31730fe ), [royriojas](https://github.com/royriojas), 24/06/2015 16:39:11
+
+    
 ## v3.1.1
 - **Build Scripts Changes**
   - Lock dependencies - [0748ff4]( https://github.com/royriojas/esbeautifier/commit/0748ff4 ), [royriojas](https://github.com/royriojas), 24/06/2015 12:20:19
