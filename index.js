@@ -4,13 +4,13 @@ var merge = require( 'extend' );
 module.exports = merge( dispatcher.create(), {
   beautify: function ( files, opts ) {
     var me = this;
-    opts = opts || {};
+    opts = opts || { };
 
     var cfg = opts.cfg;
     var useCache = !!opts.useCache;
     var checkOnly = !!opts.checkOnly;
 
-    files = files || [];
+    files = files || [ ];
 
     var cache = require( 'file-entry-cache' ).create( checkOnly ? '__esbeautifier.check__' : '__esbeautifier__' );
 
@@ -26,9 +26,7 @@ module.exports = merge( dispatcher.create(), {
 
     var count = 0;
 
-    me.fire( 'beautify:start', {
-      files: files
-    } );
+    me.fire( 'beautify:start', { files: files } );
 
     if ( files.length === 0 ) {
       me.fire( 'done', {

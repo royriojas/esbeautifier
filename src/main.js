@@ -2,7 +2,6 @@
 
 module.exports = {
   dirname: __dirname,
-
   run: function ( cli ) {
 
     // region requires
@@ -50,7 +49,7 @@ module.exports = {
       } );
     } else {
 
-      var filesToBeautify = [];
+      var filesToBeautify = [ ];
 
       beautifier.on( 'need:beautify.cli', function ( e, _args ) {
         filesToBeautify.push( _args.file );

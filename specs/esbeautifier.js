@@ -17,9 +17,7 @@ describe( 'esbeautifier', function () {
     var basename = path.basename( file );
 
     it( 'should format the file ' + basename + ' and match the expected result', function ( done ) {
-      exec( './bin/cli.js ' + file, {
-        stdio: 'ignore'
-      } ).then( function () {
+      exec( './bin/cli.js ' + file, { stdio: 'ignore' } ).then( function () {
 
         var expected = read( path.join( 'tmp/expected/', basename ) );
         var result = read( file );
@@ -34,7 +32,7 @@ describe( 'esbeautifier', function () {
     } );
   } );
 
-  after( function () {//eslint-disable-line
+  after( function () { //eslint-disable-line
     fs.removeSync( './tmp' );
   } );
 

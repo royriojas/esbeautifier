@@ -2,8 +2,27 @@
   "plugins": [
     "esformatter-jsx",
     "esformatter-quotes",
-    "esformatter-eol-last"
+    "esformatter-eol-last",
+    "esformatter-collapse-objects"
   ],
+  "collapseObjects": {
+    "ObjectExpression": {
+      "maxLineLength": 80,
+      "maxKeys": 4,
+      "maxDepth": 2,
+      "forbidden": [
+        "FunctionExpression"
+      ]
+    },
+    "ArrayExpression": {
+      "maxLineLength": 80,
+      "maxKeys": 4,
+      "maxDepth": 2,
+      "forbidden": [
+        "FunctionExpression"
+      ]
+    }
+  },
   "jsx": {
     "formatJSX": true,
     "attrsOnSameLineAsTag": false,
@@ -39,8 +58,7 @@
     "TopLevelFunctionBlock": 1,
     "TryStatement": 1,
     "VariableDeclaration.LogicalExpression": 1,
-    "WhileStatement": 1,
-    "LineComment" : 2
+    "WhileStatement": 1
   },
   "lineBreak": {
     "before": {
@@ -57,7 +75,7 @@
       "DoWhileStatementOpeningBrace": 0,
       "DoWhileStatementClosingBrace": ">=1",
       "EndOfFile": 1,
-      "EmptyStatement": "<=1",
+      "EmptyStatement": -1,
       "FinallyKeyword": -1,
       "FinallyOpeningBrace": 0,
       "FinallyClosingBrace": ">=1",
@@ -89,7 +107,7 @@
       "LogicalExpression": -1,
       "ObjectExpressionOpeningBrace": 0,
       "ObjectExpressionClosingBrace": 1,
-      "Property": "-1",
+      "Property": 1,
       "ReturnStatement": ">=1",
       "SwitchOpeningBrace": 0,
       "SwitchClosingBrace": ">=1",
@@ -120,7 +138,7 @@
       "DoWhileStatement": ">=1",
       "DoWhileStatementOpeningBrace": ">=1",
       "DoWhileStatementClosingBrace": 0,
-      "EmptyStatement": "<=1",
+      "EmptyStatement": -1,
       "FinallyKeyword": -1,
       "FinallyOpeningBrace": ">=1",
       "FinallyClosingBrace": ">=1",
@@ -182,7 +200,7 @@
       "AssignmentOperator": 1,
       "BinaryExpression": 0,
       "BinaryExpressionOperator": 1,
-      "BlockComment": 0,
+      "BlockComment": 1,
       "CallExpression": 1,
       "CatchParameterList": 0,
       "CatchOpeningBrace": 1,
@@ -223,8 +241,9 @@
       "ElseIfStatementOpeningBrace": 1,
       "ElseIfStatementClosingBrace": 1,
       "MemberExpressionClosing": 1,
-      "LineComment": 0,
+      "LineComment": 1,
       "LogicalExpressionOperator": 1,
+      "PropertyName": 1,
       "Property": 1,
       "PropertyValue": 1,
       "ParameterList": 1,
@@ -242,11 +261,13 @@
       "WhileStatementOpeningBrace": 1,
       "WhileStatementClosingBrace": 1,
       "ParameterComma": 0,
-      "ArrayExpressionOpening": 0,
+      "ArrayExpressionOpening": 1,
       "ArrayExpressionClosing": 1,
-      "ArrayExpressionComma": 0
+      "ArrayExpressionComma": 0,
+      "ObjectExpressionClosingBrace": 1
     },
     "after": {
+      "ObjectExpressionOpeningBrace": 1,
       "ArrayExpressionOpening": 1,
       "ArrayExpressionClosing": 0,
       "ArrayExpressionComma": 1,
@@ -270,7 +291,7 @@
       "DoWhileStatementOpeningBrace": 1,
       "DoWhileStatementClosingBrace": 1,
       "DoWhileStatementBody": 1,
-      "EmptyStatement": "<=1",
+      "EmptyStatement": 0,
       "ExpressionOpeningParentheses": 0,
       "FinallyKeyword": -1,
       "FinallyOpeningBrace": 1,

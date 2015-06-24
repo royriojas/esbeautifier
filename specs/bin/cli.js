@@ -4,9 +4,7 @@ describe( 'bin/esbeautifier', function () {
 
   beforeEach( function () {
     var me = this;
-    me.mainMock = me.sandbox.createSpyObj( 'main', [
-      'run'
-    ] );
+    me.mainMock = me.sandbox.createSpyObj( 'main', [ 'run' ] );
   } );
 
   it( 'should launch the main module run method', function () {
