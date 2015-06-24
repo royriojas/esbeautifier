@@ -1,6 +1,6 @@
 {
   "name": "esbeautifier",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "Simple wrapper around esformatter to beautify javascript files overriding the content of the files",
   "main": "index.js",
   "scripts": {
