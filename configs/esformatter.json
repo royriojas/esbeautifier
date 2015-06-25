@@ -107,7 +107,7 @@
       "LogicalExpression": -1,
       "ObjectExpressionOpeningBrace": 0,
       "ObjectExpressionClosingBrace": 1,
-      "Property": 1,
+      "Property": "<=2",
       "ReturnStatement": ">=1",
       "SwitchOpeningBrace": 0,
       "SwitchClosingBrace": ">=1",
