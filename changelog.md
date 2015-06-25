@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v3.1.3
+- **Refactoring**
+  - Allow spaces between Object expression properties - [c05b8c8]( https://github.com/royriojas/esbeautifier/commit/c05b8c8 ), [royriojas](https://github.com/royriojas), 25/06/2015 02:20:31
+
+    
 ## v3.1.2
 - **Enhancements**
   - Make the objects and arrays not inlined if they have nested objects or arrays - [31730fe]( https://github.com/royriojas/esbeautifier/commit/31730fe ), [royriojas](https://github.com/royriojas), 24/06/2015 16:39:11
