@@ -33,7 +33,7 @@
     "bumpery": "^1.0.7",
     "changelogx": "^1.0.13",
     "es6-promise": "^2.3.0",
-    "eslinter": "^2.0.1",
+    "eslinter": "^2.0.5",
     "fs-extra": "^0.19.0",
     "istanbul": "^0.3.15",
     "mocha-runner": "^1.0.8",
@@ -42,8 +42,7 @@
     "watch-spawn": "^1.0.3"
   },
   "dependencies": {
-    "chalk": "^1.0.0",
-    "clix": "^1.0.7",
+    "clix": "^1.1.5",
     "dispatchy": "^1.0.2",
     "esformatter": "^0.7.0",
     "esformatter-collapse-objects": "^0.4.1",

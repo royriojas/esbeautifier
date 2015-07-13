@@ -67,6 +67,6 @@ module.exports = merge( dispatcher.create(), {
       files: files,
       count: count
     } );
-  //console.log('files received', files.length, 'beautified', count);
+
   }
 } );

@@ -15,15 +15,16 @@ module.exports = {
         heading: 'Options'
       },
       {
-        option: 'checkOnly',
+        option: 'check-only',
         alias: 'k',
         type: 'Boolean',
         description: 'Will just run the beautifier and report which files need to be beautified'
       },
       {
-        option: 'useCache',
+        option: 'use-cache',
         alias: 'u',
         type: 'Boolean',
+        default: 'true',
         description: 'If true, this module will remember the `mtime` and `size` of the beatufied files and only operate on the ones that changed. If false, the cache will be destroyed. Cache will only be kept between executions with the useCache flag set to true.'
       }
     ]

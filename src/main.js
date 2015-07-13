@@ -1,17 +1,12 @@
 'use strict';
 
 module.exports = {
-  dirname: __dirname,
   run: function ( cli ) {
 
-    // region requires
     var expand = require( 'glob-expand' );
-    var console = require( './../lib/console' );
     var sFormat = require( 'stringformat' );
     var path = require( 'path' );
     var process = require( './../lib/process' );
-    var chalk = require( 'chalk' );
-    // endregion
 
     var opts = cli.opts;
 
@@ -33,19 +28,23 @@ module.exports = {
     var checkOnly = !!opts.checkOnly;
     var useCache = !!opts.useCache;
 
+    beautifier.on( 'beautify:start', function ( e, _args ) {
+      cli.subtle( 'Total files: ' + files.length + ', files to process: ' + _args.files.length );
+      if ( _args.files.length === 0 ) {
+        cli.subtle( 'No files have changed since last run' );
+      }
+    } );
+
     if ( !checkOnly ) {
       beautifier.on( 'need:beautify.cli', function ( e, _args ) {
         cli.subtle( 'beautifying', _args.file );
       } );
 
       beautifier.on( 'done.cli', function ( e, _args ) {
-        var msg = chalk.green( '>> No files needed beautification!' );
+        var msg = _args.count > 0 ? sFormat( '{0} file(s) beautified', _args.count ) : 'No files needed beautification!';
 
-        if ( _args.count > 0 ) {
-          msg = sFormat( '{0} {1} file(s) beautified', chalk.yellow( '>> beautifying done!' ), _args.count );
-        }
-
-        console.log( msg );
+        cli.success( msg );
+        cli.ok( 'Esbeautifier done!' );
       } );
     } else {
 
@@ -57,15 +56,16 @@ module.exports = {
 
       beautifier.on( 'done.cli', function () {
         if ( filesToBeautify.length > 0 ) {
-          console.error( chalk.red( '>> the following files need beautification: ' ), chalk.yellow( '\n\n   - ' + filesToBeautify.join( '\n   - ' ) ) + '\n' );
+          cli.error( 'the following files need beautification:\n\n   - ' + filesToBeautify.join( '\n   - ' ) + '\n' );
           throw new Error( sFormat( '{0} files need beautification', filesToBeautify.length ) );
         } else {
           cli.success( 'All files are beautified.' );
+          cli.ok( 'Done!' );
         }
       } );
     }
 
-    cli.subtle( 'cache:', useCache, 'checkOnly:', checkOnly );
+    cli.subtle( 'cache:', useCache + ', checkOnly:', checkOnly );
 
     beautifier.beautify( files, {
       useCache: useCache,
