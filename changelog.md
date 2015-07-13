@@ -1,5 +1,16 @@
 
 # esbeautifier - Changelog
+## v3.2.0
+- **Features**
+  - Enable the cache by default - [75b45b8]( https://github.com/royriojas/esbeautifier/commit/75b45b8 ), [royriojas](https://github.com/royriojas), 12/07/2015 22:53:34
+
+    **NOTE:**
+    
+    The cache will work better if the command is executed from the same
+    directory. If different set of files are passed the previous seen ones
+    will be forgotten. Check the `package.json` for an example of how to
+    use this module locally installed instead of globally installed
+    
 ## v3.1.3
 - **Refactoring**
   - Allow spaces between Object expression properties - [c05b8c8]( https://github.com/royriojas/esbeautifier/commit/c05b8c8 ), [royriojas](https://github.com/royriojas), 25/06/2015 02:20:31
