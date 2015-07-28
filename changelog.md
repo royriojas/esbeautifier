@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v4.0.0
+- **Enhancements**
+  - Use latest esformatter-jsx for more predictable output - [79511b1]( https://github.com/royriojas/esbeautifier/commit/79511b1 ), [royriojas](https://github.com/royriojas), 28/07/2015 03:01:18
+
+    
 ## v3.2.0
 - **Features**
   - Enable the cache by default - [75b45b8]( https://github.com/royriojas/esbeautifier/commit/75b45b8 ), [royriojas](https://github.com/royriojas), 12/07/2015 22:53:34
