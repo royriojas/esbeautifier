@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v4.1.0
+- **Build Scripts Changes**
+  - update to latest esformatter and latest esformatter-jsx - [a070b94]( https://github.com/royriojas/esbeautifier/commit/a070b94 ), [royriojas](https://github.com/royriojas), 05/08/2015 01:51:58
+
+    
 ## v4.0.1
 - **Bug Fixes**
   - Include the fix for https://github.com/royriojas/esformatter-jsx/issues/10 to fix selfclosing tags formatting - [95f0423]( https://github.com/royriojas/esbeautifier/commit/95f0423 ), [royriojas](https://github.com/royriojas), 28/07/2015 17:38:06
