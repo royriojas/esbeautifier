@@ -107,9 +107,9 @@
       }
     },
     "esformatter": {
-      "version": "0.7.2",
-      "from": "esformatter@>=0.7.2 <0.8.0",
-      "resolved": "https://registry.npmjs.org/esformatter/-/esformatter-0.7.2.tgz",
+      "version": "0.7.3",
+      "from": "esformatter@latest",
+      "resolved": "https://registry.npmjs.org/esformatter/-/esformatter-0.7.3.tgz",
       "dependencies": {
         "debug": {
           "version": "0.7.4",
@@ -269,9 +269,9 @@
           "resolved": "https://registry.npmjs.org/rocambole/-/rocambole-0.6.0.tgz",
           "dependencies": {
             "esprima": {
-              "version": "2.4.1",
+              "version": "2.5.0",
               "from": "esprima@>=2.0.0 <3.0.0",
-              "resolved": "https://registry.npmjs.org/esprima/-/esprima-2.4.1.tgz"
+              "resolved": "https://registry.npmjs.org/esprima/-/esprima-2.5.0.tgz"
             }
           }
         },
@@ -420,7 +420,7 @@
       }
     },
     "esformatter-jsx": {
-      "version": "2.0.4",
+      "version": "2.0.6",
       "from": "esformatter-jsx@latest",
       "dependencies": {
         "falafel-espree": {
