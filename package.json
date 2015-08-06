@@ -14,7 +14,7 @@
     "check": "npm run beautify-check && npm run eslint && npm test",
     "changelog": "changelogx -f markdown -o ./changelog.md",
     "do-changelog": "npm run changelog && git add ./changelog.md && git commit -m 'DOC: Generate changelog'",
-    "install-hooks": "prepush install && changelogx install-hook",
+    "install-hooks": "prepush install && changelogx install-hook && precommit install",
     "pre-v": "npm run check",
     "post-v": "npm run do-changelog && git push --no-verify && git push --tags --no-verify",
     "bump-major": "npm run pre-v && npm version major -m 'BLD: Release v%s' && npm run post-v",
@@ -33,6 +33,9 @@
   "prepush": [
     "npm run check"
   ],
+  "precommit": [
+    "npm run check"
+  ],
   "devDependencies": {
     "changelogx": "^1.0.15",
     "es6-promise": "^2.3.0",
@@ -40,6 +43,7 @@
     "fs-extra": "^0.22.1",
     "istanbul": "^0.3.17",
     "mocha-runner": "^1.0.8",
+    "precommit": "^1.1.0",
     "prepush": "^3.0.4",
     "proxyquire": "^1.6.0",
     "watch-spawn": "^1.0.3"
