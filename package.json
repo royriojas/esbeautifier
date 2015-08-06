@@ -55,8 +55,8 @@
     "extend": "^2.0.1",
     "file-entry-cache": "^1.0.1",
     "glob-expand": "^0.1.0",
+    "jq-trim": "^0.1.1",
     "optionator": "^0.6.0",
-    "read-file": "^0.1.2",
     "stringformat": "0.0.5",
     "write": "^0.2.0"
   },

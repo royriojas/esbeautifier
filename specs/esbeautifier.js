@@ -3,7 +3,10 @@ describe( 'esbeautifier', function () {
   var path = require( 'path' );
 
   var exec = require( '../lib/exec' );
-  var read = require( 'read-file' ).readFileSync;
+  var read = function ( file ) {
+    return require( 'fs' ).readFileSync( file, { encoding: 'utf8' } );
+  };
+
   //var write = require( 'write' ).sync;
 
   var fs = require( 'fs-extra' );

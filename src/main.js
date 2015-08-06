@@ -24,9 +24,16 @@ module.exports = {
 
     var cfg = cli.getConfig();
 
-    var beautifier = require( './../index' );
     var checkOnly = !!opts.checkOnly;
     var useCache = !!opts.useCache;
+
+
+    var beautifier = require( './../index' ).create( {
+      useCache: useCache,
+      checkOnly: checkOnly,
+      cfg: cfg,
+      cacheId: opts.cacheId
+    } );
 
     beautifier.on( 'beautify:start', function ( e, _args ) {
       cli.subtle( 'Total files: ' + files.length + ', files to process: ' + _args.files.length );
@@ -67,11 +74,7 @@ module.exports = {
 
     cli.subtle( 'cache:', useCache + ', checkOnly:', checkOnly );
 
-    beautifier.beautify( files, {
-      useCache: useCache,
-      checkOnly: checkOnly,
-      cfg: cfg
-    } );
+    beautifier.beautify( files );
 
     beautifier.off( '.cli' );
   }

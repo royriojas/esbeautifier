@@ -1,10 +1,17 @@
 var dispatcher = require( 'dispatchy' );
-var merge = require( 'extend' );
+var extend = require( 'extend' );
+var trim = require( 'jq-trim' );
+var fs = require( 'fs' );
 
-module.exports = merge( dispatcher.create(), {
-  beautify: function ( files, opts ) {
+var beautifier = extend( dispatcher.create(), {
+  _init: function ( opts ) {
     var me = this;
-    opts = opts || { };
+    me.opts = opts;
+  },
+  beautify: function ( files ) {
+    var me = this;
+    var opts = me.opts;
+    //opts = opts || { };
 
     var cfg = opts.cfg;
     var useCache = !!opts.useCache;
@@ -12,7 +19,7 @@ module.exports = merge( dispatcher.create(), {
 
     files = files || [ ];
 
-    var cache = require( 'file-entry-cache' ).create( checkOnly ? '__esbeautifier.check__' : '__esbeautifier__' );
+    var cache = require( 'file-entry-cache' ).create( (checkOnly ? '__esbeautifier.check__' : '__esbeautifier__') + trim( opts.cacheId ) );
 
     if ( !useCache ) {
       cache.deleteCacheFile();
@@ -21,7 +28,7 @@ module.exports = merge( dispatcher.create(), {
     }
 
     var esformatter = require( 'esformatter' );
-    var read = require( 'read-file' ).readFileSync;
+
     var write = require( 'write' ).sync;
 
     var count = 0;
@@ -38,7 +45,8 @@ module.exports = merge( dispatcher.create(), {
     }
 
     files.forEach( function ( file ) {
-      var source = read( file );
+      var source = fs.readFileSync( file, { encoding: 'utf8' } );
+
       var output;
       try {
         output = esformatter.format( source, cfg );
@@ -67,6 +75,14 @@ module.exports = merge( dispatcher.create(), {
       files: files,
       count: count
     } );
-
   }
 } );
+
+module.exports = {
+  create: function ( opts ) {
+    var ins = Object.create( beautifier );
+    ins._init( opts );
+
+    return ins;
+  }
+};
