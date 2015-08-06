@@ -1,5 +1,14 @@
 
 # esbeautifier - Changelog
+## v4.2.0
+- **Build Scripts Changes**
+  - Add precommit module - [b0ade67]( https://github.com/royriojas/esbeautifier/commit/b0ade67 ), [royriojas](https://github.com/royriojas), 05/08/2015 19:16:09
+
+    
+- **Features**
+  - Add cacheId option to specify an identifier for the cache file to use - [bbb9316]( https://github.com/royriojas/esbeautifier/commit/bbb9316 ), [royriojas](https://github.com/royriojas), 05/08/2015 19:13:56
+
+    
 ## v4.1.0
 - **Build Scripts Changes**
   - update to latest esformatter and latest esformatter-jsx - [a070b94]( https://github.com/royriojas/esbeautifier/commit/a070b94 ), [royriojas](https://github.com/royriojas), 05/08/2015 01:51:58
