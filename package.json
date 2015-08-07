@@ -51,7 +51,7 @@
   "dependencies": {
     "clix": "^1.1.5",
     "dispatchy": "^1.0.3",
-    "esformatter": "^0.7.3",
+    "esformatter": "^0.7.2",
     "esformatter-collapse-objects": "^0.4.1",
     "esformatter-eol-last": "^1.0.0",
     "esformatter-jsx": "^2.0.10",

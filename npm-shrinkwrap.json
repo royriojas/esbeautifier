@@ -119,9 +119,9 @@
       }
     },
     "esformatter": {
-      "version": "0.7.3",
-      "from": "esformatter@latest",
-      "resolved": "https://registry.npmjs.org/esformatter/-/esformatter-0.7.3.tgz",
+      "version": "0.7.2",
+      "from": "esformatter@0.7.2",
+      "resolved": "https://registry.npmjs.org/esformatter/-/esformatter-0.7.2.tgz",
       "dependencies": {
         "debug": {
           "version": "0.7.4",
