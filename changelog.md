@@ -1,5 +1,14 @@
 
 # esbeautifier - Changelog
+## v4.2.4
+- **Build Scripts Changes**
+  - Update dependencies and build scripts - [c004828]( https://github.com/royriojas/esbeautifier/commit/c004828 ), [royriojas](https://github.com/royriojas), 07/08/2015 15:04:12
+
+    
+- **Bug Fixes**
+  - Downgrade to esformatter@7.0.2 to avoid https://github.com/millermedeiros/esformatter/issues/347 - [fb94fe7]( https://github.com/royriojas/esbeautifier/commit/fb94fe7 ), [royriojas](https://github.com/royriojas), 07/08/2015 15:03:25
+
+    
 ## v4.2.3
 - **Bug Fixes**
   - make sure JSXExpressionContainers are all in the same line - [1db64c3]( https://github.com/royriojas/esbeautifier/commit/1db64c3 ), [royriojas](https://github.com/royriojas), 07/08/2015 11:37:01
