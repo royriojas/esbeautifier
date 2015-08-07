@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v4.2.3
+- **Bug Fixes**
+  - make sure JSXExpressionContainers are all in the same line - [1db64c3]( https://github.com/royriojas/esbeautifier/commit/1db64c3 ), [royriojas](https://github.com/royriojas), 07/08/2015 11:37:01
+
+    
 ## v4.2.2
 - **Build Scripts Changes**
   - make sure tests are only executed once during bump - [7bd29d1]( https://github.com/royriojas/esbeautifier/commit/7bd29d1 ), [royriojas](https://github.com/royriojas), 07/08/2015 00:26:21
