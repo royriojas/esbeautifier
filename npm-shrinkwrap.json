@@ -495,7 +495,7 @@
       }
     },
     "esformatter-jsx": {
-      "version": "2.0.9",
+      "version": "2.0.10",
       "from": "esformatter-jsx@latest",
       "dependencies": {
         "falafel-espree": {

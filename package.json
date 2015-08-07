@@ -54,7 +54,7 @@
     "esformatter": "^0.7.3",
     "esformatter-collapse-objects": "^0.4.1",
     "esformatter-eol-last": "^1.0.0",
-    "esformatter-jsx": "^2.0.9",
+    "esformatter-jsx": "^2.0.10",
     "esformatter-quotes": "^1.0.2",
     "extend": "^2.0.1",
     "file-entry-cache": "^1.0.1",
