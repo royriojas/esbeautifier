@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v4.2.1
+- **Bug Fixes**
+  - nested JSXElements inside JSXExpressionContainers now are properly beautified closes https://github.com/royriojas/esformatter-jsx/issues/13 - [4764230]( https://github.com/royriojas/esbeautifier/commit/4764230 ), [royriojas](https://github.com/royriojas), 06/08/2015 17:47:33
+
+    
 ## v4.2.0
 - **Build Scripts Changes**
   - Add precommit module - [b0ade67]( https://github.com/royriojas/esbeautifier/commit/b0ade67 ), [royriojas](https://github.com/royriojas), 05/08/2015 19:16:09
