@@ -1,6 +1,6 @@
 {
   "name": "esbeautifier",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "dependencies": {
     "clix": {
       "version": "1.1.5",
