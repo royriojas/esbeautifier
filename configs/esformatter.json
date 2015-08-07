@@ -28,7 +28,10 @@
     "attrsOnSameLineAsTag": false,
     "maxAttrsOnTag": 2,
     "firstAttributeOnSameLine": true,
-    "alignWithFirstAttribute": true
+    "alignWithFirstAttribute": true,
+    "htmlOptions": {
+      "wrap_line_length": 250
+    }
   },
   "quotes": {
     "type": "single",
