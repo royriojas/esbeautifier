@@ -1,5 +1,13 @@
 
 # esbeautifier - Changelog
+## v4.2.2
+- **Build Scripts Changes**
+  - make sure tests are only executed once during bump - [7bd29d1]( https://github.com/royriojas/esbeautifier/commit/7bd29d1 ), [royriojas](https://github.com/royriojas), 07/08/2015 00:26:21
+
+    
+  - Update to latest esformatter-jsx - [120bce4]( https://github.com/royriojas/esbeautifier/commit/120bce4 ), [royriojas](https://github.com/royriojas), 07/08/2015 00:25:21
+
+    
 ## v4.2.1
 - **Bug Fixes**
   - nested JSXElements inside JSXExpressionContainers now are properly beautified closes https://github.com/royriojas/esformatter-jsx/issues/13 - [4764230]( https://github.com/royriojas/esbeautifier/commit/4764230 ), [royriojas](https://github.com/royriojas), 06/08/2015 17:47:33
