@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v4.2.6
+- **Build Scripts Changes**
+  - Update to latest clix - [90a219a]( https://github.com/royriojas/esbeautifier/commit/90a219a ), [royriojas](https://github.com/royriojas), 11/08/2015 14:41:55
+
+    
 ## v4.2.5
 - **Build Scripts Changes**
   - Update clix dep - [6dfd3ab]( https://github.com/royriojas/esbeautifier/commit/6dfd3ab ), [royriojas](https://github.com/royriojas), 09/08/2015 02:12:13
