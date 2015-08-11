@@ -1,5 +1,14 @@
 
 # esbeautifier - Changelog
+## v4.2.7
+- **Build Scripts Changes**
+  - Add message telling job is done - [23538ed]( https://github.com/royriojas/esbeautifier/commit/23538ed ), [royriojas](https://github.com/royriojas), 11/08/2015 14:47:19
+
+    
+- **Tests Related fixes**
+  - Remove tmp folder at end of tests - [0fe3664]( https://github.com/royriojas/esbeautifier/commit/0fe3664 ), [royriojas](https://github.com/royriojas), 11/08/2015 14:46:43
+
+    
 ## v4.2.6
 - **Build Scripts Changes**
   - Update to latest clix - [90a219a]( https://github.com/royriojas/esbeautifier/commit/90a219a ), [royriojas](https://github.com/royriojas), 11/08/2015 14:41:55
