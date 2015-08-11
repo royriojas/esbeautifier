@@ -67,7 +67,7 @@ module.exports = {
           throw new Error( sFormat( '{0} files need beautification', filesToBeautify.length ) );
         } else {
           cli.success( 'All files are beautified.' );
-          cli.ok( 'Done!' );
+          cli.ok( 'esbeautifier done!' );
         }
       } );
     }
