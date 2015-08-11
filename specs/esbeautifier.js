@@ -36,7 +36,7 @@ describe( 'esbeautifier', function () {
   } );
 
   after( function () { //eslint-disable-line
-    //fs.removeSync( './tmp' );
+    fs.removeSync( './tmp' );
   } );
 
 } );
