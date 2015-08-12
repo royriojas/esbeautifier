@@ -1,6 +1,6 @@
 {
   "name": "esbeautifier",
-  "version": "4.2.8",
+  "version": "4.2.9",
   "dependencies": {
     "ansi-styles": {
       "version": "2.1.0",
