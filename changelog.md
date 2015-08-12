@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v4.2.9
+- **Bug Fixes**
+  - Update esformatter-jsx to fix the issue with `ObjectExpression` and `ArrayExpression` inside a `JSXContainerExpression` - [6746cb0]( https://github.com/royriojas/esbeautifier/commit/6746cb0 ), [royriojas](https://github.com/royriojas), 12/08/2015 01:10:23
+
+    
 ## v4.2.8
 - **Build Scripts Changes**
   - update clix dep to get nicer log output - [d2be874]( https://github.com/royriojas/esbeautifier/commit/d2be874 ), [royriojas](https://github.com/royriojas), 11/08/2015 17:39:04
