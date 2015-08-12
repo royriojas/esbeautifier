@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v4.2.8
+- **Build Scripts Changes**
+  - update clix dep to get nicer log output - [d2be874]( https://github.com/royriojas/esbeautifier/commit/d2be874 ), [royriojas](https://github.com/royriojas), 11/08/2015 17:39:04
+
+    
 ## v4.2.7
 - **Build Scripts Changes**
   - Add message telling job is done - [23538ed]( https://github.com/royriojas/esbeautifier/commit/23538ed ), [royriojas](https://github.com/royriojas), 11/08/2015 14:47:19
