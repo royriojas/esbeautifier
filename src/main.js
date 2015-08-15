@@ -3,18 +3,14 @@
 module.exports = {
   run: function ( cli ) {
 
-    var expand = require( 'glob-expand' );
+    //var expand = require( 'glob-expand' );
     var sFormat = require( 'stringformat' );
-    var path = require( 'path' );
-    var process = require( './../lib/process' );
+    //var path = require( 'path' );
+    //var process = require( './../lib/process' );
 
     var opts = cli.opts;
 
-    var files = opts._.map( function ( glob ) {
-      return path.resolve( process.cwd(), glob );
-    } );
-
-    files = expand.apply( null, files );
+    var files = cli.expandGlobs( opts._, { resolvePaths: true } );
 
     if ( files.length === 0 ) {
       //console.log( chalk.green( '>> no files to beautify' ) );
