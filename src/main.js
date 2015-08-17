@@ -5,12 +5,14 @@ module.exports = {
 
     //var expand = require( 'glob-expand' );
     var sFormat = require( 'stringformat' );
-    //var path = require( 'path' );
+    var path = require( 'path' );
     //var process = require( './../lib/process' );
 
     var opts = cli.opts;
 
-    var files = cli.expandGlobs( opts._, { resolvePaths: true } );
+    var files = cli.expandGlobs( cli.opts._ ).map( function ( file ) {
+      return path.resolve( file );
+    } );
 
     if ( files.length === 0 ) {
       //console.log( chalk.green( '>> no files to beautify' ) );

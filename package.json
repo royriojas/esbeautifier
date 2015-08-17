@@ -50,7 +50,7 @@
     "watch-spawn": "^1.0.5"
   },
   "dependencies": {
-    "clix": "^2.0.8",
+    "clix": "^2.0.12",
     "dispatchy": "^1.0.3",
     "esformatter": "0.7.2",
     "esformatter-collapse-objects": "^0.4.1",
