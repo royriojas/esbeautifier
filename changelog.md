@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v4.2.11
+- **Bug Fixes**
+  - Make sure the right clix module is loaded - [829aafd]( https://github.com/royriojas/esbeautifier/commit/829aafd ), [royriojas](https://github.com/royriojas), 17/08/2015 15:05:11
+
+    
 ## v4.2.10
 - **Enhancements**
   - Update to latest clix - [0d766a2]( https://github.com/royriojas/esbeautifier/commit/0d766a2 ), [royriojas](https://github.com/royriojas), 17/08/2015 01:01:48
