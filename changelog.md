@@ -1,5 +1,14 @@
 
 # esbeautifier - Changelog
+## v4.2.10
+- **Enhancements**
+  - Update to latest clix - [0d766a2]( https://github.com/royriojas/esbeautifier/commit/0d766a2 ), [royriojas](https://github.com/royriojas), 17/08/2015 01:01:48
+
+    
+- **Build Scripts Changes**
+  - fix glob expansion when including excluded paths - [4aefc18]( https://github.com/royriojas/esbeautifier/commit/4aefc18 ), [royriojas](https://github.com/royriojas), 15/08/2015 01:59:53
+
+    
 ## v4.2.9
 - **Bug Fixes**
   - Update esformatter-jsx to fix the issue with `ObjectExpression` and `ArrayExpression` inside a `JSXContainerExpression` - [6746cb0]( https://github.com/royriojas/esbeautifier/commit/6746cb0 ), [royriojas](https://github.com/royriojas), 12/08/2015 01:10:23
