@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v5.0.0
+- **Enhancements**
+  - update esbeautfier to latest esformatter to get support for ES6 - [05bd249]( https://github.com/royriojas/esbeautifier/commit/05bd249 ), [royriojas](https://github.com/royriojas), 18/09/2015 01:51:42
+
+    
 ## v4.2.12
 - **Enhancements**
   - update esformatter-jsx to support spread operators - [133e10c]( https://github.com/royriojas/esbeautifier/commit/133e10c ), [royriojas](https://github.com/royriojas), 18/09/2015 01:41:40
