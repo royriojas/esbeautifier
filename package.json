@@ -52,7 +52,7 @@
   "dependencies": {
     "clix": "^2.0.13",
     "dispatchy": "^1.0.3",
-    "esformatter": "https://github.com/millermedeiros/esformatter/tarball/master",
+    "esformatter": "https://github.com/royriojas/esformatter/tarball/master",
     "esformatter-collapse-objects": "^0.4.1",
     "esformatter-eol-last": "^1.0.0",
     "esformatter-jsx": "^2.1.0",
