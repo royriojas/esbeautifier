@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v5.0.1
+- **Enhancements**
+  - Install from the fork to avoid inadverted updates - [32b4be2]( https://github.com/royriojas/esbeautifier/commit/32b4be2 ), [royriojas](https://github.com/royriojas), 19/09/2015 14:23:59
+
+    
 ## v5.0.0
 - **Enhancements**
   - update esbeautfier to latest esformatter to get support for ES6 - [05bd249]( https://github.com/royriojas/esbeautifier/commit/05bd249 ), [royriojas](https://github.com/royriojas), 18/09/2015 01:51:42
