@@ -55,6 +55,7 @@
     "esformatter": "https://github.com/royriojas/esformatter/tarball/master",
     "esformatter-collapse-objects": "^0.4.1",
     "esformatter-eol-last": "^1.0.0",
+    "esformatter-ignore": "^0.1.1",
     "esformatter-jsx": "^2.1.0",
     "esformatter-quotes": "^1.0.2",
     "extend": "^3.0.0",

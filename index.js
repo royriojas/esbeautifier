@@ -11,7 +11,6 @@ var beautifier = extend( dispatcher.create(), {
   beautify: function ( files ) {
     var me = this;
     var opts = me.opts;
-    //opts = opts || { };
 
     var cfg = opts.cfg;
     var useCache = !!opts.useCache;
