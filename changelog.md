@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v5.1.1
+- **Enhancements**
+  - destroy the cache when the configuration options change - [73267e9]( https://github.com/royriojas/esbeautifier/commit/73267e9 ), [royriojas](https://github.com/royriojas), 23/09/2015 22:30:24
+
+    
 ## v5.1.0
 - **Enhancements**
   - Add esformatter-ignore to be able to let some blocks of code to not be formatted - [e7ed32e]( https://github.com/royriojas/esbeautifier/commit/e7ed32e ), [royriojas](https://github.com/royriojas), 22/09/2015 00:13:01
