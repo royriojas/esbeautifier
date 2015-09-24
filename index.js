@@ -1,6 +1,5 @@
 var dispatcher = require( 'dispatchy' );
 var extend = require( 'extend' );
-var trim = require( 'jq-trim' );
 var fs = require( 'fs' );
 var hash = require( 'hash-string' );
 var fileEntryCache = require( 'file-entry-cache' );
@@ -27,8 +26,6 @@ var beautifier = extend( dispatcher.create(), {
         currentHash: hashOfConfig
       } );
     }
-
-
   },
 
   beautify: function ( files ) {
@@ -41,7 +38,9 @@ var beautifier = extend( dispatcher.create(), {
 
     files = files || [ ];
 
-    var fEntryCache = fileEntryCache.create( (checkOnly ? '__esbeautifier.check__' : '__esbeautifier__') + trim( opts.cacheId ) );
+    var cacheId = opts.cacheId ? opts.cacheId : hash( process.cwd() );
+
+    var fEntryCache = fileEntryCache.create( (checkOnly ? '__esbeautifier.check__' : '__esbeautifier__') + cacheId );
 
     if ( !useCache ) {
       fEntryCache.destroy();

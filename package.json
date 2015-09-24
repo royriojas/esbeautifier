@@ -61,7 +61,6 @@
     "extend": "^3.0.0",
     "file-entry-cache": "^1.2.4",
     "hash-string": "^1.0.0",
-    "jq-trim": "^0.1.1",
     "mocha-runner": "^1.1.1",
     "stringformat": "0.0.5",
     "write": "^0.2.0"
