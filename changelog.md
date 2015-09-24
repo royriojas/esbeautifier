@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v5.1.2
+- **Enhancements**
+  - use the current working directory as an id - [15b7e56]( https://github.com/royriojas/esbeautifier/commit/15b7e56 ), [royriojas](https://github.com/royriojas), 23/09/2015 23:06:57
+
+    
 ## v5.1.1
 - **Enhancements**
   - destroy the cache when the configuration options change - [73267e9]( https://github.com/royriojas/esbeautifier/commit/73267e9 ), [royriojas](https://github.com/royriojas), 23/09/2015 22:30:24
