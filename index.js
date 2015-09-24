@@ -2,12 +2,35 @@ var dispatcher = require( 'dispatchy' );
 var extend = require( 'extend' );
 var trim = require( 'jq-trim' );
 var fs = require( 'fs' );
+var hash = require( 'hash-string' );
+var fileEntryCache = require( 'file-entry-cache' );
 
 var beautifier = extend( dispatcher.create(), {
   _init: function ( opts ) {
     var me = this;
     me.opts = opts;
   },
+
+  _checkHashOfConfig: function ( fEntryCache, opts ) {
+    var me = this;
+    var configHashPersisted = fEntryCache.cache.getKey( 'configHash' );
+
+    var hashOfConfig = hash( JSON.stringify( opts ) );
+    var ignoreCache = configHashPersisted !== hashOfConfig;
+
+    if ( ignoreCache ) {
+      fEntryCache.destroy();
+      fEntryCache.cache.setKey( 'configHash', hashOfConfig );
+
+      me.fire( 'ignore:cache', {
+        previousHash: configHashPersisted,
+        currentHash: hashOfConfig
+      } );
+    }
+
+
+  },
+
   beautify: function ( files ) {
     var me = this;
     var opts = me.opts;
@@ -18,13 +41,15 @@ var beautifier = extend( dispatcher.create(), {
 
     files = files || [ ];
 
-    var cache = require( 'file-entry-cache' ).create( (checkOnly ? '__esbeautifier.check__' : '__esbeautifier__') + trim( opts.cacheId ) );
+    var fEntryCache = fileEntryCache.create( (checkOnly ? '__esbeautifier.check__' : '__esbeautifier__') + trim( opts.cacheId ) );
 
     if ( !useCache ) {
-      cache.deleteCacheFile();
+      fEntryCache.destroy();
     } else {
-      files = cache.getUpdatedFiles( files );
+      me._checkHashOfConfig( fEntryCache, opts );
     }
+
+    files = fEntryCache.getUpdatedFiles( files );
 
     var esformatter = require( 'esformatter' );
 
@@ -57,7 +82,7 @@ var beautifier = extend( dispatcher.create(), {
         if ( !checkOnly ) {
           write( file, output );
         } else {
-          cache.removeEntry( file );
+          fEntryCache.removeEntry( file );
         }
         count++;
         me.fire( 'need:beautify', {
@@ -68,7 +93,7 @@ var beautifier = extend( dispatcher.create(), {
       }
     } );
 
-    cache.reconcile();
+    fEntryCache.reconcile();
     me.fire( 'done', {
       checkOnly: checkOnly,
       files: files,
