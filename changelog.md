@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v6.0.0
+- **Enhancements**
+  - properly collapse objects - [c131f4f]( https://github.com/royriojas/esbeautifier/commit/c131f4f ), [royriojas](https://github.com/royriojas), 24/09/2015 00:36:51
+
+    
 ## v5.1.2
 - **Enhancements**
   - use the current working directory as an id - [15b7e56]( https://github.com/royriojas/esbeautifier/commit/15b7e56 ), [royriojas](https://github.com/royriojas), 23/09/2015 23:06:57
