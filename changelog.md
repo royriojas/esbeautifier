@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v6.0.1
+- **Bug Fixes**
+  - properly expand/inline objects/arrays based on the size - [0e28e72]( https://github.com/royriojas/esbeautifier/commit/0e28e72 ), [royriojas](https://github.com/royriojas), 24/09/2015 02:12:46
+
+    
 ## v6.0.0
 - **Enhancements**
   - properly collapse objects - [c131f4f]( https://github.com/royriojas/esbeautifier/commit/c131f4f ), [royriojas](https://github.com/royriojas), 24/09/2015 00:36:51
