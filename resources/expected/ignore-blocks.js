@@ -27,7 +27,8 @@ module.exports = function ( browserifyOpts, opts, argv ) {
   var depsCacheFile = fileEntryCache.create( depsCacheId );
 
   var persistifyCache = cache.getKey( 'persistifyArgs' ) || {
-      cache: {}, packageCache: {}
+      cache: {},
+      packageCache: {}
     };
 
   browserifyOpts.cache = persistifyCache.cache;
@@ -73,10 +74,7 @@ module.exports = function ( browserifyOpts, opts, argv ) {
       } );
     }
 
-    cache.setKey( 'persistifyArgs', {
-      cache: browserifyOpts.cache,
-      packageCache: browserifyOpts.packageCache
-    } );
+    cache.setKey( 'persistifyArgs', { cache: browserifyOpts.cache, packageCache: browserifyOpts.packageCache } );
   }
 
   normalizeCache();

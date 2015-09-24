@@ -27,7 +27,8 @@ var cache = flatCache.load( id );
 var depsCacheFile = fileEntryCache.create( depsCacheId );
 
   var persistifyCache = cache.getKey( 'persistifyArgs' ) || {
-  cache: {}, packageCache: {}
+  cache: {},
+  packageCache: {}
 };
 
   browserifyOpts.cache = persistifyCache.cache;

@@ -21,10 +21,7 @@ var beautifier = extend( dispatcher.create(), {
       fEntryCache.destroy();
       fEntryCache.cache.setKey( 'configHash', hashOfConfig );
 
-      me.fire( 'ignore:cache', {
-        previousHash: configHashPersisted,
-        currentHash: hashOfConfig
-      } );
+      me.fire( 'ignore:cache', { previousHash: configHashPersisted, currentHash: hashOfConfig } );
     }
   },
 

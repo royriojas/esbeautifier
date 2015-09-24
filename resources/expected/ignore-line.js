@@ -69,10 +69,7 @@ module.exports = function ( browserifyOpts, opts, argv ) {
       } );
     }
 
-    cache.setKey( 'persistifyArgs', {
-      cache: browserifyOpts.cache,
-      packageCache: browserifyOpts.packageCache
-    } );
+    cache.setKey( 'persistifyArgs', { cache: browserifyOpts.cache, packageCache: browserifyOpts.packageCache } );
   }
 
   normalizeCache();
