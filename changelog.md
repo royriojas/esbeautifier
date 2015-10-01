@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v6.0.2
+- **Enhancements**
+  - use esformatter-ignore inside esformatter-jsx - [22aebee]( https://github.com/royriojas/esbeautifier/commit/22aebee ), [royriojas](https://github.com/royriojas), 01/10/2015 01:43:58
+
+    
 ## v6.0.1
 - **Bug Fixes**
   - properly expand/inline objects/arrays based on the size - [0e28e72]( https://github.com/royriojas/esbeautifier/commit/0e28e72 ), [royriojas](https://github.com/royriojas), 24/09/2015 02:12:46
