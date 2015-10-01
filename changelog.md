@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v6.0.3
+- **Enhancements**
+  - properly ignore blocks of code from the formatter - [acf8a87]( https://github.com/royriojas/esbeautifier/commit/acf8a87 ), [royriojas](https://github.com/royriojas), 01/10/2015 12:28:07
+
+    
 ## v6.0.2
 - **Enhancements**
   - use esformatter-ignore inside esformatter-jsx - [22aebee]( https://github.com/royriojas/esbeautifier/commit/22aebee ), [royriojas](https://github.com/royriojas), 01/10/2015 01:43:58
