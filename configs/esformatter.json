@@ -1,6 +1,5 @@
 {
   "plugins": [
-    "esformatter-ignore",
     "esformatter-jsx",
     "esformatter-quotes",
     "esformatter-eol-last",
