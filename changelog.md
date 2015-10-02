@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v6.1.2
+- **Features**
+  - Support SpreadProperties outside of JSX blocks - [a8c90ce]( https://github.com/royriojas/esbeautifier/commit/a8c90ce ), [royriojas](https://github.com/royriojas), 02/10/2015 01:36:38
+
+    
 ## v6.1.1
 - **Features**
   - support instance props - [33e4fd3]( https://github.com/royriojas/esbeautifier/commit/33e4fd3 ), [royriojas](https://github.com/royriojas), 02/10/2015 01:03:53
