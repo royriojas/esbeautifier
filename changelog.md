@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v6.0.4
+- **Refactoring**
+  - update esformatter-jsx to support ignore-blocks - [a0650a5]( https://github.com/royriojas/esbeautifier/commit/a0650a5 ), [royriojas](https://github.com/royriojas), 01/10/2015 21:44:14
+
+    
 ## v6.0.3
 - **Enhancements**
   - properly ignore blocks of code from the formatter - [acf8a87]( https://github.com/royriojas/esbeautifier/commit/acf8a87 ), [royriojas](https://github.com/royriojas), 01/10/2015 12:28:07
