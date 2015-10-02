@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v6.1.3
+- **Bug Fixes**
+  - Issue with the parser returning negative indexes - [cb9f95e]( https://github.com/royriojas/esbeautifier/commit/cb9f95e ), [royriojas](https://github.com/royriojas), 02/10/2015 02:14:33
+
+    
 ## v6.1.2
 - **Features**
   - Support SpreadProperties outside of JSX blocks - [a8c90ce]( https://github.com/royriojas/esbeautifier/commit/a8c90ce ), [royriojas](https://github.com/royriojas), 02/10/2015 01:36:38
