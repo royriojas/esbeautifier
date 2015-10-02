@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v6.1.1
+- **Features**
+  - support instance props - [33e4fd3]( https://github.com/royriojas/esbeautifier/commit/33e4fd3 ), [royriojas](https://github.com/royriojas), 02/10/2015 01:03:53
+
+    
 ## v6.1.0
 - **Features**
   - support decorators and static props - [e9cffe3]( https://github.com/royriojas/esbeautifier/commit/e9cffe3 ), [royriojas](https://github.com/royriojas), 02/10/2015 00:41:52
