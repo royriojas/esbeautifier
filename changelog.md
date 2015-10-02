@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v6.1.0
+- **Features**
+  - support decorators and static props - [e9cffe3]( https://github.com/royriojas/esbeautifier/commit/e9cffe3 ), [royriojas](https://github.com/royriojas), 02/10/2015 00:41:52
+
+    
 ## v6.0.4
 - **Refactoring**
   - update esformatter-jsx to support ignore-blocks - [a0650a5]( https://github.com/royriojas/esbeautifier/commit/a0650a5 ), [royriojas](https://github.com/royriojas), 01/10/2015 21:44:14
