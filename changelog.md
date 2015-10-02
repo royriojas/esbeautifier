@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v6.1.4
+- **Build Scripts Changes**
+  - lock dependencies to a specific commit in github - [ccd58c1]( https://github.com/royriojas/esbeautifier/commit/ccd58c1 ), [royriojas](https://github.com/royriojas), 02/10/2015 12:29:48
+
+    
 ## v6.1.3
 - **Bug Fixes**
   - Issue with the parser returning negative indexes - [cb9f95e]( https://github.com/royriojas/esbeautifier/commit/cb9f95e ), [royriojas](https://github.com/royriojas), 02/10/2015 02:14:33
