@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v6.1.5
+- **Build Scripts Changes**
+  - Update esformatter-jsx dep to include fix for `NamedExportDeclaration` - [87df818]( https://github.com/royriojas/esbeautifier/commit/87df818 ), [royriojas](https://github.com/royriojas), 06/10/2015 19:55:23
+
+    
 ## v6.1.4
 - **Build Scripts Changes**
   - lock dependencies to a specific commit in github - [ccd58c1]( https://github.com/royriojas/esbeautifier/commit/ccd58c1 ), [royriojas](https://github.com/royriojas), 02/10/2015 12:29:48
