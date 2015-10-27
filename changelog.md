@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v6.1.7
+- **Features**
+  - support async/await - [344b5b7]( https://github.com/royriojas/esbeautifier/commit/344b5b7 ), [royriojas](https://github.com/royriojas), 26/10/2015 21:23:28
+
+    
 ## v6.1.6
 - **Bug Fixes**
   - Properly handle ES7 decorators that are expressions - [eff0371]( https://github.com/royriojas/esbeautifier/commit/eff0371 ), [royriojas](https://github.com/royriojas), 08/10/2015 13:46:12
