@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v6.1.8
+- **Bug Fixes**
+  - proper support for async/await - [9cb2e4f]( https://github.com/royriojas/esbeautifier/commit/9cb2e4f ), [royriojas](https://github.com/royriojas), 26/10/2015 22:37:03
+
+    
 ## v6.1.7
 - **Features**
   - support async/await - [344b5b7]( https://github.com/royriojas/esbeautifier/commit/344b5b7 ), [royriojas](https://github.com/royriojas), 26/10/2015 21:23:28
