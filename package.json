@@ -52,10 +52,10 @@
   "dependencies": {
     "clix": "^2.0.13",
     "dispatchy": "^1.0.3",
-    "esformatter": "https://github.com/royriojas/esformatter/tarball/a4a52d8",
+    "esformatter": "^0.8.1",
     "esformatter-collapse-objects": "^0.4.1",
     "esformatter-eol-last": "^1.0.0",
-    "esformatter-jsx": "^2.3.10",
+    "esformatter-jsx": "^3.0.0",
     "esformatter-quotes": "^1.0.2",
     "extend": "^3.0.0",
     "file-entry-cache": "^1.2.4",
