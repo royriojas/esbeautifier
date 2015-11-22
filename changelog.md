@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v8.0.2
+- **Build Scripts Changes**
+  - Use the latest esformatter-jsx for the fix for async/await - [a3fb519]( https://github.com/royriojas/esbeautifier/commit/a3fb519 ), [Roy Riojas](https://github.com/Roy Riojas), 22/11/2015 14:36:36
+
+    
 ## v8.0.1
 - **Bug Fixes**
   - Properly format code with async token on function expressions - [86875cd]( https://github.com/royriojas/esbeautifier/commit/86875cd ), [Roy Riojas](https://github.com/Roy Riojas), 22/11/2015 14:13:23
