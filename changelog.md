@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v8.0.0
+- **Build Scripts Changes**
+  - Update to latest version of esformatter-jsx to properly handle the async tokens - [68445ab]( https://github.com/royriojas/esbeautifier/commit/68445ab ), [Roy Riojas](https://github.com/Roy Riojas), 22/11/2015 13:36:13
+
+    
 ## v7.0.0
 - **Build Scripts Changes**
   - update deps to next major version - [969987e]( https://github.com/royriojas/esbeautifier/commit/969987e ), [royriojas](https://github.com/royriojas), 16/11/2015 23:51:02
