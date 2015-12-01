@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v8.0.4
+- **Build Scripts Changes**
+  - Update esformatter-jsx to latest to fix some bugs - [d1b15c1]( https://github.com/royriojas/esbeautifier/commit/d1b15c1 ), [royriojas](https://github.com/royriojas), 01/12/2015 14:41:59
+
+    
 ## v8.0.3
 - **Features**
   - support async ArrowFunctionExpressions and Decorators in classMethods - [c8f091c]( https://github.com/royriojas/esbeautifier/commit/c8f091c ), [royriojas](https://github.com/royriojas), 30/11/2015 14:07:51
