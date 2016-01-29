@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v8.0.5
+- **Bug Fixes**
+  - locking deps to prevent issues with latest esformatter - [61c3560]( https://github.com/royriojas/esbeautifier/commit/61c3560 ), [royriojas](https://github.com/royriojas), 29/01/2016 17:42:02
+
+    
 ## v8.0.4
 - **Build Scripts Changes**
   - Update esformatter-jsx to latest to fix some bugs - [d1b15c1]( https://github.com/royriojas/esbeautifier/commit/d1b15c1 ), [royriojas](https://github.com/royriojas), 01/12/2015 14:41:59
