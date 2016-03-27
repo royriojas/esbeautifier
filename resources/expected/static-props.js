@@ -57,7 +57,7 @@ export default class App extends Component {
   }
 
   static fetchData( store ) {
-    const promises = [ ];
+    const promises = [];
     if ( !isInfoLoaded( store.getState() ) ) {
       promises.push( store.dispatch( loadInfo() ) );
     }

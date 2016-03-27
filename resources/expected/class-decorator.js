@@ -35,8 +35,12 @@ const meta = {
 };
 
 @connect(
-  state => ({ user: state.auth.user }),
-  dispatch => bindActionCreators( { logout }, dispatch )
+  state => ({
+    user: state.auth.user
+  }),
+  dispatch => bindActionCreators( {
+    logout
+  }, dispatch )
 )
 export default class App extends Component {
   static propTypes = {
@@ -61,7 +65,7 @@ export default class App extends Component {
   }
 
   static fetchData( store ) {
-    const promises = [ ];
+    const promises = [];
     if ( !isInfoLoaded( store.getState() ) ) {
       promises.push( store.dispatch( loadInfo() ) );
     }

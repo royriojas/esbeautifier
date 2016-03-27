@@ -21,7 +21,10 @@ var beautifier = extend( dispatcher.create(), {
       fEntryCache.destroy();
       fEntryCache.cache.setKey( 'configHash', hashOfConfig );
 
-      me.fire( 'ignore:cache', { previousHash: configHashPersisted, currentHash: hashOfConfig } );
+      me.fire( 'ignore:cache', {
+        previousHash: configHashPersisted,
+        currentHash: hashOfConfig
+      } );
     }
   },
 
@@ -33,7 +36,7 @@ var beautifier = extend( dispatcher.create(), {
     var useCache = !!opts.useCache;
     var checkOnly = !!opts.checkOnly;
 
-    files = files || [ ];
+    files = files || [];
 
     var cacheId = opts.cacheId ? opts.cacheId : hash( process.cwd() );
 
@@ -53,7 +56,9 @@ var beautifier = extend( dispatcher.create(), {
 
     var count = 0;
 
-    me.fire( 'beautify:start', { files: files } );
+    me.fire( 'beautify:start', {
+      files: files
+    } );
 
     if ( files.length === 0 ) {
       me.fire( 'done', {
@@ -65,7 +70,9 @@ var beautifier = extend( dispatcher.create(), {
     }
 
     files.forEach( function ( file ) {
-      var source = fs.readFileSync( file, { encoding: 'utf8' } );
+      var source = fs.readFileSync( file, {
+        encoding: 'utf8'
+      } );
 
       var output;
       try {

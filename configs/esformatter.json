@@ -2,27 +2,8 @@
   "plugins": [
     "esformatter-jsx",
     "esformatter-quotes",
-    "esformatter-eol-last",
-    "esformatter-collapse-objects"
+    "esformatter-eol-last"
   ],
-  "collapseObjects": {
-    "ObjectExpression": {
-      "maxLineLength": 160,
-      "maxKeys": 2,
-      "maxDepth": 1,
-      "forbidden": [
-        "FunctionExpression"
-      ]
-    },
-    "ArrayExpression": {
-      "maxLineLength": 160,
-      "maxKeys": 2,
-      "maxDepth": 1,
-      "forbidden": [
-        "FunctionExpression"
-      ]
-    }
-  },
   "jsx": {
     "formatJSX": true,
     "attrsOnSameLineAsTag": false,

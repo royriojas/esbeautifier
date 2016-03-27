@@ -1,1 +1,4 @@
-var abc = { some: 'prop', abc: 'demo' };
+var abc = {
+  some: 'prop',
+  abc: 'demo'
+};
