@@ -46,7 +46,7 @@
     "mocha-runner": "^1.1.2",
     "precommit": "^1.2.0",
     "prepush": "^3.1.8",
-    "proxyquire": "^1.6.0",
+    "proxyquire": "1.6.0",
     "watch-spawn": "^1.0.5"
   },
   "dependencies": {
