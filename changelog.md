@@ -1,5 +1,16 @@
 
 # esbeautifier - Changelog
+## v10.1.0
+- **Build Scripts Changes**
+  - Update esformatter config and deps - [686f9dc]( https://github.com/royriojas/esbeautifier/commit/686f9dc ), [Roy Riojas](https://github.com/Roy Riojas), 11/06/2016 05:16:33
+
+    
+  - exact version for proxyquire - [25c50f7]( https://github.com/royriojas/esbeautifier/commit/25c50f7 ), [Roy Riojas](https://github.com/Roy Riojas), 28/05/2016 02:01:25
+
+    
+  - update node targets - [2a2acce]( https://github.com/royriojas/esbeautifier/commit/2a2acce ), [Roy Riojas](https://github.com/Roy Riojas), 28/05/2016 01:43:16
+
+    
 ## v10.0.0
 - **Build Scripts Changes**
   - update to latest esformatter and esformatter-jsx - [45d7806]( https://github.com/royriojas/esbeautifier/commit/45d7806 ), [Roy Riojas](https://github.com/Roy Riojas), 28/05/2016 01:02:02
