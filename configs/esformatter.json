@@ -20,6 +20,7 @@
   },
   "preset": "default",
   "indent": {
+    "alignComments": false,
     "value": "  ",
     "ArrayExpression": 1,
     "AssignmentExpression": 1,
