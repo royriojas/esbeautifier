@@ -54,7 +54,7 @@
     "dispatchy": "^1.0.3",
     "esformatter": "^0.9.5",
     "esformatter-eol-last": "^1.0.0",
-    "esformatter-jsx": "^6.1.0",
+    "esformatter-jsx": "^6.1.2",
     "esformatter-quotes": "^1.0.3",
     "extend": "^3.0.0",
     "file-entry-cache": "^1.2.4",
