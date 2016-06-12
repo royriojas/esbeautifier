@@ -1,5 +1,10 @@
 
 # esbeautifier - Changelog
+## v10.1.1
+- **Build Scripts Changes**
+  - Update esformatter-jsx dep - [7cc6d7b]( https://github.com/royriojas/esbeautifier/commit/7cc6d7b ), [Roy Riojas](https://github.com/Roy Riojas), 12/06/2016 03:28:48
+
+    
 ## v10.1.0
 - **Build Scripts Changes**
   - Update esformatter config and deps - [686f9dc]( https://github.com/royriojas/esbeautifier/commit/686f9dc ), [Roy Riojas](https://github.com/Roy Riojas), 11/06/2016 05:16:33
