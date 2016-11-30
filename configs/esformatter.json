@@ -10,6 +10,7 @@
     "maxAttrsOnTag": 2,
     "firstAttributeOnSameLine": true,
     "alignWithFirstAttribute": true,
+    "JSXAttributeQuotes": "double",
     "htmlOptions": {
       "wrap_line_length": 250
     }
