@@ -60,7 +60,7 @@
     "file-entry-cache": "^1.2.4",
     "hash-string": "^1.0.0",
     "stringformat": "0.0.5",
-    "write": "^0.2.0"
+    "write": "^2.0.0"
   },
   "bugs": {
     "url": "https://github.com/royriojas/esbeautifier/issues"
