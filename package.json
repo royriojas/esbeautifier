@@ -57,7 +57,7 @@
     "esformatter-jsx": "7.4.0",
     "esformatter-quotes": "^1.0.3",
     "extend": "^3.0.0",
-    "file-entry-cache": "^1.2.4",
+    "file-entry-cache": "^8.0.0",
     "hash-string": "^1.0.0",
     "stringformat": "0.0.5",
     "write": "^0.2.0"
